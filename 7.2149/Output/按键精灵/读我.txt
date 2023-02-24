@@ -1,0 +1,7 @@
+生成的obj.vbs即是使用在按键精灵平台下的类库封装. 需要注意的是,由于函数(Stop)和VBS冲突,我在类里封装的函数名改为了(StopAudio)
+以下是一个例子,把obj.vbs拷贝到d盘根目录,然后把你的DLL regsvr32到系统中,然后拷贝下面的代码,在按键里新建一个脚本粘贴进去,如果可以正常弹出版本号,说明封装OK!
+需要注意的是,即使你发布版本,这个obj.vbs是不需要你包含到附件里,也不需要你释放出来,按键已经把它作为脚本的一部分生成了!
+import "d:\obj.vbs"
+set dm = new MyDmsoft   '创建对象
+MsgBox dm.Ver()
+set dm = nothing  '释放对象

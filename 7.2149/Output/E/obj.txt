@@ -1,0 +1,2935 @@
+.版本 2
+
+.程序集 MyDmsoft
+.程序集变量 obj, 对象
+
+.子程序 _初始化, , , 当基于本类的对象被创建后，此方法会被自动调用
+
+
+
+.子程序 _销毁, , , 当基于本类的对象被销毁前，此方法会被自动调用
+
+释放 ()
+
+.子程序 创建, , 公开
+
+释放 ()
+obj.创建 (“dm.dmsoft”, )
+SetParam64ToPointer()
+
+.子程序 释放, , 公开
+
+obj.清除 ()
+
+.子程序 GetZjjAddr, 整数型, 公开, 获取字节集的数据地址
+.参数 param, 字节集, 参考
+
+置入代码 ({ 139, 69, 12, 139, 0, 131, 192, 8, 201, 194, 8, 0 })
+返回 (0)
+
+.子程序 SetRowGapNoDict, 整数型, 公开
+.参数 row_gap, 整数型
+
+返回 (obj.数值方法 (“SetRowGapNoDict”, row_gap))
+
+.子程序 FindStrEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrEx”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 FindStrE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrE”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 DisAssemble, 文本型, 公开
+.参数 asm_code, 文本型
+.参数 base_addr, 长整数型
+.参数 is_64bit, 整数型
+
+返回 (obj.文本方法 (“DisAssemble”, asm_code, 取变量地址(base_addr), is_64bit))
+
+.子程序 FindPicExS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicExS”, x1, y1, x2, y2, pic_name, delta_color, sim, dir))
+
+.子程序 OcrEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“OcrEx”, x1, y1, x2, y2, color, sim))
+
+.子程序 GetColor, 文本型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.文本方法 (“GetColor”, x, y))
+
+.子程序 EnableFindPicMultithread, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableFindPicMultithread”, en))
+
+.子程序 SetEnv, 整数型, 公开
+.参数 index, 整数型
+.参数 name, 文本型
+.参数 value, 文本型
+
+返回 (obj.数值方法 (“SetEnv”, index, name, value))
+
+.子程序 FindPic, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindPic”, x1, y1, x2, y2, pic_name, delta_color, sim, dir, x, y))
+
+.子程序 SetMinColGap, 整数型, 公开
+.参数 col_gap, 整数型
+
+返回 (obj.数值方法 (“SetMinColGap”, col_gap))
+
+.子程序 StringToData, 文本型, 公开
+.参数 string_value, 文本型
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“StringToData”, string_value, tpe))
+
+.子程序 GetCommandLine, 文本型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.文本方法 (“GetCommandLine”, hwnd))
+
+.子程序 MiddleUp, 整数型, 公开
+
+返回 (obj.数值方法 (“MiddleUp”))
+
+.子程序 EnableFontSmooth, 整数型, 公开
+
+返回 (obj.数值方法 (“EnableFontSmooth”))
+
+.子程序 FreePic, 整数型, 公开
+.参数 pic_name, 文本型
+
+返回 (obj.数值方法 (“FreePic”, pic_name))
+
+.子程序 SetDisplayAcceler, 整数型, 公开
+.参数 level, 整数型
+
+返回 (obj.数值方法 (“SetDisplayAcceler”, level))
+
+.子程序 Ocr, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“Ocr”, x1, y1, x2, y2, color, sim))
+
+.子程序 GetWindowTitle, 文本型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.文本方法 (“GetWindowTitle”, hwnd))
+
+.子程序 LockDisplay, 整数型, 公开
+.参数 locks, 整数型
+
+返回 (obj.数值方法 (“LockDisplay”, locks))
+
+.子程序 SetPath, 整数型, 公开
+.参数 path, 文本型
+
+返回 (obj.数值方法 (“SetPath”, path))
+
+.子程序 BGR2RGB, 文本型, 公开
+.参数 bgr_color, 文本型
+
+返回 (obj.文本方法 (“BGR2RGB”, bgr_color))
+
+.子程序 UnLoadDriver, 整数型, 公开
+
+返回 (obj.数值方法 (“UnLoadDriver”))
+
+.子程序 GetOsType, 整数型, 公开
+
+返回 (obj.数值方法 (“GetOsType”))
+
+.子程序 SetEnumWindowDelay, 整数型, 公开
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“SetEnumWindowDelay”, delay))
+
+.子程序 FindMulColor, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.数值方法 (“FindMulColor”, x1, y1, x2, y2, color, sim))
+
+.子程序 ReadDataAddr, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 length, 整数型
+
+返回 (obj.文本方法 (“ReadDataAddr”, hwnd, 取变量地址(addr), length))
+
+.子程序 SetKeypadDelay, 整数型, 公开
+.参数 tpe, 文本型
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“SetKeypadDelay”, tpe, delay))
+
+.子程序 GetDiskModel, 文本型, 公开
+.参数 index, 整数型
+
+返回 (obj.文本方法 (“GetDiskModel”, index))
+
+.子程序 AppendPicAddr, 文本型, 公开
+.参数 pic_info, 文本型
+.参数 addr, 整数型
+.参数 size, 整数型
+
+返回 (obj.文本方法 (“AppendPicAddr”, pic_info, addr, size))
+
+.子程序 AppendPicAddrZjj, 文本型, 公开
+.参数 pic_info, 文本型
+.参数 pic, 字节集,参考
+.局部变量 addr, 整数型
+.局部变量 size, 整数型
+
+addr ＝ GetZjjAddr (pic)
+size ＝ 取字节集长度 (pic)
+返回 (obj.文本方法 (“AppendPicAddr”, pic_info, addr, size))
+
+.子程序 GetSpecialWindow, 整数型, 公开
+.参数 flag, 整数型
+
+返回 (obj.数值方法 (“GetSpecialWindow”, flag))
+
+.子程序 EnableMouseSync, 整数型, 公开
+.参数 en, 整数型
+.参数 time_out, 整数型
+
+返回 (obj.数值方法 (“EnableMouseSync”, en, time_out))
+
+.子程序 KeyUpChar, 整数型, 公开
+.参数 key_str, 文本型
+
+返回 (obj.数值方法 (“KeyUpChar”, key_str))
+
+.子程序 FaqCapture, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 quality, 整数型
+.参数 delay, 整数型
+.参数 time, 整数型
+
+返回 (obj.数值方法 (“FaqCapture”, x1, y1, x2, y2, quality, delay, time))
+
+.子程序 IsFolderExist, 整数型, 公开
+.参数 folder, 文本型
+
+返回 (obj.数值方法 (“IsFolderExist”, folder))
+
+.子程序 GetCursorShape, 文本型, 公开
+
+返回 (obj.文本方法 (“GetCursorShape”))
+
+.子程序 EnableIme, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableIme”, en))
+
+.子程序 EnableKeypadPatch, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableKeypadPatch”, en))
+
+.子程序 FoobarLock, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FoobarLock”, hwnd))
+
+.子程序 Assemble, 文本型, 公开
+.参数 base_addr, 长整数型
+.参数 is_64bit, 整数型
+
+返回 (obj.文本方法 (“Assemble”, 取变量地址(base_addr), is_64bit))
+
+.子程序 FindPicMemE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicMemE”, x1, y1, x2, y2, pic_info, delta_color, sim, dir))
+
+.子程序 FindPicMemEZjj, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 字节集,参考
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.局部变量 addr, 整数型
+.局部变量 size, 整数型
+.局部变量 info, 文本型
+
+addr ＝ GetZjjAddr (pic_info)
+size ＝ 取字节集长度 (pic_info)
+info ＝ “”
+info = AppendPicAddr(info,addr,size)
+返回 (obj.文本方法 (“FindPicMemE”, x1, y1, x2, y2, info, delta_color, sim, dir))
+
+.子程序 FloatToData, 文本型, 公开
+.参数 float_value, 小数型
+
+返回 (obj.文本方法 (“FloatToData”, float_value))
+
+.子程序 SetShowAsmErrorMsg, 整数型, 公开
+.参数 show, 整数型
+
+返回 (obj.数值方法 (“SetShowAsmErrorMsg”, show))
+
+.子程序 FindPicMem, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindPicMem”, x1, y1, x2, y2, pic_info, delta_color, sim, dir, x, y))
+
+.子程序 FindPicMemZjj, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 字节集,参考
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+.局部变量 addr, 整数型
+.局部变量 size, 整数型
+.局部变量 info, 文本型
+
+addr ＝ GetZjjAddr (pic_info)
+size ＝ 取字节集长度 (pic_info)
+info ＝ “”
+info = AppendPicAddr(info,addr,size)
+返回 (obj.数值方法 (“FindPicMem”, x1, y1, x2, y2, info, delta_color, sim, dir, x, y))
+
+.子程序 FindStrFastS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.文本方法 (“FindStrFastS”, x1, y1, x2, y2, str, color, sim, x, y))
+
+.子程序 FoobarDrawLine, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 style, 整数型
+.参数 width, 整数型
+
+返回 (obj.数值方法 (“FoobarDrawLine”, hwnd, x1, y1, x2, y2, color, style, width))
+
+.子程序 KeyDown, 整数型, 公开
+.参数 vk, 整数型
+
+返回 (obj.数值方法 (“KeyDown”, vk))
+
+.子程序 GetDiskReversion, 文本型, 公开
+.参数 index, 整数型
+
+返回 (obj.文本方法 (“GetDiskReversion”, index))
+
+.子程序 FindPicSimEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicSimEx”, x1, y1, x2, y2, pic_name, delta_color, sim, dir))
+
+.子程序 ReadFileData, 文本型, 公开
+.参数 file_name, 文本型
+.参数 start_pos, 整数型
+.参数 end_pos, 整数型
+
+返回 (obj.文本方法 (“ReadFileData”, file_name, start_pos, end_pos))
+
+.子程序 FindPicSimE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicSimE”, x1, y1, x2, y2, pic_name, delta_color, sim, dir))
+
+.子程序 GetRealPath, 文本型, 公开
+.参数 path, 文本型
+
+返回 (obj.文本方法 (“GetRealPath”, path))
+
+.子程序 DmGuardLoadCustom, 整数型, 公开
+.参数 tpe, 文本型
+.参数 path, 文本型
+
+返回 (obj.数值方法 (“DmGuardLoadCustom”, tpe, path))
+
+.子程序 GetClipboard, 文本型, 公开
+
+返回 (obj.文本方法 (“GetClipboard”))
+
+.子程序 GetLastError, 整数型, 公开
+
+返回 (obj.数值方法 (“GetLastError”))
+
+.子程序 WaitKey, 整数型, 公开
+.参数 key_code, 整数型
+.参数 time_out, 整数型
+
+返回 (obj.数值方法 (“WaitKey”, key_code, time_out))
+
+.子程序 LeaveCri, 整数型, 公开
+
+返回 (obj.数值方法 (“LeaveCri”))
+
+.子程序 Play, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“Play”, file_name))
+
+.子程序 GetWordResultStr, 文本型, 公开
+.参数 str, 文本型
+.参数 index, 整数型
+
+返回 (obj.文本方法 (“GetWordResultStr”, str, index))
+
+.子程序 FoobarDrawPic, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 pic, 文本型
+.参数 trans_color, 文本型
+
+返回 (obj.数值方法 (“FoobarDrawPic”, hwnd, x, y, pic, trans_color))
+
+.子程序 GetKeyState, 整数型, 公开
+.参数 vk, 整数型
+
+返回 (obj.数值方法 (“GetKeyState”, vk))
+
+.子程序 KeyDownChar, 整数型, 公开
+.参数 key_str, 文本型
+
+返回 (obj.数值方法 (“KeyDownChar”, key_str))
+
+.子程序 LoadPicByte, 整数型, 公开
+.参数 addr, 整数型
+.参数 size, 整数型
+.参数 name, 文本型
+
+返回 (obj.数值方法 (“LoadPicByte”, addr, size, name))
+
+.子程序 WheelUp, 整数型, 公开
+
+返回 (obj.数值方法 (“WheelUp”))
+
+.子程序 OpenProcess, 整数型, 公开
+.参数 pid, 整数型
+
+返回 (obj.数值方法 (“OpenProcess”, pid))
+
+.子程序 UseDict, 整数型, 公开
+.参数 index, 整数型
+
+返回 (obj.数值方法 (“UseDict”, index))
+
+.子程序 ReadDataAddrToBin, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 length, 整数型
+
+返回 (obj.数值方法 (“ReadDataAddrToBin”, hwnd, 取变量地址(addr), length))
+
+.子程序 ReadDataAddrZjj, 字节集, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 size, 整数型
+.局部变量 datazjj, 字节集
+.局部变量 data, 整数型
+.局部变量 data_size, 整数型
+
+data = obj.数值方法 (“ReadDataAddrToBin”, hwnd, 取变量地址(addr), size)
+
+.如果 (data ＝ 0)
+    data_size = 0
+.否则
+    data_size = size
+.如果结束
+datazjj = 指针到字节集 (data, data_size)
+返回 (datazjj)
+
+.子程序 IsDisplayDead, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 t, 整数型
+
+返回 (obj.数值方法 (“IsDisplayDead”, x1, y1, x2, y2, t))
+
+.子程序 SetUAC, 整数型, 公开
+.参数 uac, 整数型
+
+返回 (obj.数值方法 (“SetUAC”, uac))
+
+.子程序 GetPicSize, 文本型, 公开
+.参数 pic_name, 文本型
+
+返回 (obj.文本方法 (“GetPicSize”, pic_name))
+
+.子程序 WriteFile, 整数型, 公开
+.参数 file_name, 文本型
+.参数 content, 文本型
+
+返回 (obj.数值方法 (“WriteFile”, file_name, content))
+
+.子程序 FoobarPrintText, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 text, 文本型
+.参数 color, 文本型
+
+返回 (obj.数值方法 (“FoobarPrintText”, hwnd, text, color))
+
+.子程序 WriteData, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 data, 文本型
+
+返回 (obj.数值方法 (“WriteData”, hwnd, addr, data))
+
+.子程序 DoubleToData, 文本型, 公开
+.参数 double_value, 双精度小数型
+
+返回 (obj.文本方法 (“DoubleToData”, double_value))
+
+.子程序 ImageToBmp, 整数型, 公开
+.参数 pic_name, 文本型
+.参数 bmp_name, 文本型
+
+返回 (obj.数值方法 (“ImageToBmp”, pic_name, bmp_name))
+
+.子程序 GetPointWindow, 整数型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.数值方法 (“GetPointWindow”, x, y))
+
+.子程序 ReadDouble, 双精度小数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+
+返回 (obj.数值方法 (“ReadDouble”, hwnd, addr))
+
+.子程序 SendCommand, 整数型, 公开
+.参数 cmd, 文本型
+
+返回 (obj.数值方法 (“SendCommand”, cmd))
+
+.子程序 GetCursorPos, 整数型, 公开
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“GetCursorPos”, x, y))
+
+.子程序 ReadIniPwd, 文本型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.文本方法 (“ReadIniPwd”, section, key, file_name, pwd))
+
+.子程序 FindDataEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 data, 文本型
+.参数 steps, 整数型
+.参数 multi_thread, 整数型
+.参数 mode, 整数型
+
+返回 (obj.文本方法 (“FindDataEx”, hwnd, addr_range, data, steps, multi_thread, mode))
+
+.子程序 WriteDataAddr, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 data, 文本型
+
+返回 (obj.数值方法 (“WriteDataAddr”, hwnd, 取变量地址(addr), data))
+
+.子程序 ReadData, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 length, 整数型
+
+返回 (obj.文本方法 (“ReadData”, hwnd, addr, length))
+
+.子程序 SetWordLineHeightNoDict, 整数型, 公开
+.参数 line_height, 整数型
+
+返回 (obj.数值方法 (“SetWordLineHeightNoDict”, line_height))
+
+.子程序 FaqCancel, 整数型, 公开
+
+返回 (obj.数值方法 (“FaqCancel”))
+
+.子程序 EnableShareDict, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableShareDict”, en))
+
+.子程序 SetWordLineHeight, 整数型, 公开
+.参数 line_height, 整数型
+
+返回 (obj.数值方法 (“SetWordLineHeight”, line_height))
+
+.子程序 GetNowDict, 整数型, 公开
+
+返回 (obj.数值方法 (“GetNowDict”))
+
+.子程序 SendStringIme, 整数型, 公开
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“SendStringIme”, str))
+
+.子程序 DeleteFolder, 整数型, 公开
+.参数 folder_name, 文本型
+
+返回 (obj.数值方法 (“DeleteFolder”, folder_name))
+
+.子程序 GetForegroundWindow, 整数型, 公开
+
+返回 (obj.数值方法 (“GetForegroundWindow”))
+
+.子程序 GetClientSize, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 width, 整数型,参考
+.参数 height, 整数型,参考
+
+返回 (obj.数值方法 (“GetClientSize”, hwnd, width, height))
+
+.子程序 DelEnv, 整数型, 公开
+.参数 index, 整数型
+.参数 name, 文本型
+
+返回 (obj.数值方法 (“DelEnv”, index, name))
+
+.子程序 CreateFoobarRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+
+返回 (obj.数值方法 (“CreateFoobarRect”, hwnd, x, y, w, h))
+
+.子程序 SetClientSize, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 width, 整数型
+.参数 height, 整数型
+
+返回 (obj.数值方法 (“SetClientSize”, hwnd, width, height))
+
+.子程序 FindMultiColor, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 first_color, 文本型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindMultiColor”, x1, y1, x2, y2, first_color, offset_color, sim, dir, x, y))
+
+.子程序 delay, 整数型, 公开
+.参数 mis, 整数型
+
+返回 (obj.数值方法 (“delay”, mis))
+
+.子程序 SetDictMem, 整数型, 公开
+.参数 index, 整数型
+.参数 addr, 整数型
+.参数 size, 整数型
+
+返回 (obj.数值方法 (“SetDictMem”, index, addr, size))
+
+.子程序 SetDictMemZjj, 整数型, 公开
+.参数 index, 整数型
+.参数 dict, 字节集,参考
+.局部变量 addr, 整数型
+.局部变量 size, 整数型
+
+addr ＝ GetZjjAddr (dict)
+size ＝ 取字节集长度 (dict)
+返回 (obj.数值方法 (“SetDictMem”, index, addr, size))
+
+.子程序 FindMultiColorE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 first_color, 文本型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindMultiColorE”, x1, y1, x2, y2, first_color, offset_color, sim, dir))
+
+.子程序 GetTime, 整数型, 公开
+
+返回 (obj.数值方法 (“GetTime”))
+
+.子程序 SetDisplayInput, 整数型, 公开
+.参数 mode, 文本型
+
+返回 (obj.数值方法 (“SetDisplayInput”, mode))
+
+.子程序 FindColor, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindColor”, x1, y1, x2, y2, color, sim, dir, x, y))
+
+.子程序 SwitchBindWindow, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“SwitchBindWindow”, hwnd))
+
+.子程序 RightUp, 整数型, 公开
+
+返回 (obj.数值方法 (“RightUp”))
+
+.子程序 FindStr, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindStr”, x1, y1, x2, y2, str, color, sim, x, y))
+
+.子程序 LeftClick, 整数型, 公开
+
+返回 (obj.数值方法 (“LeftClick”))
+
+.子程序 SendString, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“SendString”, hwnd, str))
+
+.子程序 GetNetTime, 文本型, 公开
+
+返回 (obj.文本方法 (“GetNetTime”))
+
+.子程序 FoobarFillRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+
+返回 (obj.数值方法 (“FoobarFillRect”, hwnd, x1, y1, x2, y2, color))
+
+.子程序 SetWindowState, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 flag, 整数型
+
+返回 (obj.数值方法 (“SetWindowState”, hwnd, flag))
+
+.子程序 RegEx, 整数型, 公开
+.参数 code, 文本型
+.参数 Ver, 文本型
+.参数 ip, 文本型
+
+返回 (obj.数值方法 (“RegEx”, code, Ver, ip))
+
+.子程序 DmGuard, 整数型, 公开
+.参数 en, 整数型
+.参数 tpe, 文本型
+
+返回 (obj.数值方法 (“DmGuard”, en, tpe))
+
+.子程序 SetMouseSpeed, 整数型, 公开
+.参数 speed, 整数型
+
+返回 (obj.数值方法 (“SetMouseSpeed”, speed))
+
+.子程序 GetWindowRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x1, 整数型,参考
+.参数 y1, 整数型,参考
+.参数 x2, 整数型,参考
+.参数 y2, 整数型,参考
+
+返回 (obj.数值方法 (“GetWindowRect”, hwnd, x1, y1, x2, y2))
+
+.子程序 GetDisplayInfo, 文本型, 公开
+
+返回 (obj.文本方法 (“GetDisplayInfo”))
+
+.子程序 GetWindowProcessId, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“GetWindowProcessId”, hwnd))
+
+.子程序 EnableKeypadSync, 整数型, 公开
+.参数 en, 整数型
+.参数 time_out, 整数型
+
+返回 (obj.数值方法 (“EnableKeypadSync”, en, time_out))
+
+.子程序 FindString, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 string_value, 文本型
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“FindString”, hwnd, addr_range, string_value, tpe))
+
+.子程序 CreateFoobarEllipse, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+
+返回 (obj.数值方法 (“CreateFoobarEllipse”, hwnd, x, y, w, h))
+
+.子程序 WriteDoubleAddr, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 v, 双精度小数型
+
+返回 (obj.数值方法 (“WriteDoubleAddr”, hwnd, 取变量地址(addr), v))
+
+.子程序 SetPicPwd, 整数型, 公开
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“SetPicPwd”, pwd))
+
+.子程序 MoveDD, 整数型, 公开
+.参数 dx, 整数型
+.参数 dy, 整数型
+
+返回 (obj.数值方法 (“MoveDD”, dx, dy))
+
+.子程序 AddDict, 整数型, 公开
+.参数 index, 整数型
+.参数 dict_info, 文本型
+
+返回 (obj.数值方法 (“AddDict”, index, dict_info))
+
+.子程序 SendStringIme2, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 str, 文本型
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“SendStringIme2”, hwnd, str, mode))
+
+.子程序 InitCri, 整数型, 公开
+
+返回 (obj.数值方法 (“InitCri”))
+
+.子程序 FetchWord, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 word, 文本型
+
+返回 (obj.文本方法 (“FetchWord”, x1, y1, x2, y2, color, word))
+
+.子程序 VirtualProtectEx, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 size, 整数型
+.参数 tpe, 整数型
+.参数 old_protect, 整数型
+
+返回 (obj.数值方法 (“VirtualProtectEx”, hwnd, 取变量地址(addr), size, tpe, old_protect))
+
+.子程序 ClientToScreen, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“ClientToScreen”, hwnd, x, y))
+
+.子程序 LeftDown, 整数型, 公开
+
+返回 (obj.数值方法 (“LeftDown”))
+
+.子程序 GetWindowState, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 flag, 整数型
+
+返回 (obj.数值方法 (“GetWindowState”, hwnd, flag))
+
+.子程序 Hex64, 文本型, 公开
+.参数 v, 长整数型
+
+返回 (obj.文本方法 (“Hex64”, 取变量地址(v)))
+
+.子程序 RightDown, 整数型, 公开
+
+返回 (obj.数值方法 (“RightDown”))
+
+.子程序 SetExcludeRegion, 整数型, 公开
+.参数 tpe, 整数型
+.参数 info, 文本型
+
+返回 (obj.数值方法 (“SetExcludeRegion”, tpe, info))
+
+.子程序 RightClick, 整数型, 公开
+
+返回 (obj.数值方法 (“RightClick”))
+
+.子程序 EnableSpeedDx, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableSpeedDx”, en))
+
+.子程序 GetModuleBaseAddr, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 module_name, 文本型
+
+返回 (obj.数值方法 (“GetModuleBaseAddr”, hwnd, module_name))
+
+.子程序 FindWindowByProcessId, 整数型, 公开
+.参数 process_id, 整数型
+.参数 class_name, 文本型
+.参数 title_name, 文本型
+
+返回 (obj.数值方法 (“FindWindowByProcessId”, process_id, class_name, title_name))
+
+.子程序 FindShapeE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindShapeE”, x1, y1, x2, y2, offset_color, sim, dir))
+
+.子程序 GetResultPos, 整数型, 公开
+.参数 str, 文本型
+.参数 index, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“GetResultPos”, str, index, x, y))
+
+.子程序 FindColorEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindColorEx”, x1, y1, x2, y2, color, sim, dir))
+
+.子程序 WheelDown, 整数型, 公开
+
+返回 (obj.数值方法 (“WheelDown”))
+
+.子程序 FaqIsPosted, 整数型, 公开
+
+返回 (obj.数值方法 (“FaqIsPosted”))
+
+.子程序 LockMouseRect, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+
+返回 (obj.数值方法 (“LockMouseRect”, x1, y1, x2, y2))
+
+.子程序 FoobarClearText, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FoobarClearText”, hwnd))
+
+.子程序 CreateFoobarRoundRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+.参数 rw, 整数型
+.参数 rh, 整数型
+
+返回 (obj.数值方法 (“CreateFoobarRoundRect”, hwnd, x, y, w, h, rw, rh))
+
+.子程序 SetInputDm, 整数型, 公开
+.参数 input_dm, 整数型
+.参数 rx, 整数型
+.参数 ry, 整数型
+
+返回 (obj.数值方法 (“SetInputDm”, input_dm, rx, ry))
+
+.子程序 GetDict, 文本型, 公开
+.参数 index, 整数型
+.参数 font_index, 整数型
+
+返回 (obj.文本方法 (“GetDict”, index, font_index))
+
+.子程序 GetDictInfo, 文本型, 公开
+.参数 str, 文本型
+.参数 font_name, 文本型
+.参数 font_size, 整数型
+.参数 flag, 整数型
+
+返回 (obj.文本方法 (“GetDictInfo”, str, font_name, font_size, flag))
+
+.子程序 EnumWindowSuper, 文本型, 公开
+.参数 spec1, 文本型
+.参数 flag1, 整数型
+.参数 type1, 整数型
+.参数 spec2, 文本型
+.参数 flag2, 整数型
+.参数 type2, 整数型
+.参数 sort, 整数型
+
+返回 (obj.文本方法 (“EnumWindowSuper”, spec1, flag1, type1, spec2, flag2, type2, sort))
+
+.子程序 WriteDataFromBin, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 data, 整数型
+.参数 length, 整数型
+
+返回 (obj.数值方法 (“WriteDataFromBin”, hwnd, addr, data, length))
+
+.子程序 WriteDataZjj, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 datazjj, 字节集,参考
+.局部变量 data, 整数型
+.局部变量 size, 整数型
+
+data ＝ GetZjjAddr (datazjj)
+size ＝ 取字节集长度 (datazjj)
+返回 (obj.数值方法 (“WriteDataFromBin”, hwnd, addr, data,size))
+
+.子程序 FindInt, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 int_value_min, 长整数型
+.参数 int_value_max, 长整数型
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“FindInt”, hwnd, addr_range, 取变量地址(int_value_min), 取变量地址(int_value_max), tpe))
+
+.子程序 FindWindowByProcess, 整数型, 公开
+.参数 process_name, 文本型
+.参数 class_name, 文本型
+.参数 title_name, 文本型
+
+返回 (obj.数值方法 (“FindWindowByProcess”, process_name, class_name, title_name))
+
+.子程序 GetDmCount, 整数型, 公开
+
+返回 (obj.数值方法 (“GetDmCount”))
+
+.子程序 RegExNoMac, 整数型, 公开
+.参数 code, 文本型
+.参数 Ver, 文本型
+.参数 ip, 文本型
+
+返回 (obj.数值方法 (“RegExNoMac”, code, Ver, ip))
+
+.子程序 SetParam64ToPointer, 整数型, 公开
+
+返回 (obj.数值方法 (“SetParam64ToPointer”))
+
+.子程序 FaqSend, 文本型, 公开
+.参数 server, 文本型
+.参数 handle, 整数型
+.参数 request_type, 整数型
+.参数 time_out, 整数型
+
+返回 (obj.文本方法 (“FaqSend”, server, handle, request_type, time_out))
+
+.子程序 EnumWindowByProcess, 文本型, 公开
+.参数 process_name, 文本型
+.参数 title, 文本型
+.参数 class_name, 文本型
+.参数 filter, 整数型
+
+返回 (obj.文本方法 (“EnumWindowByProcess”, process_name, title, class_name, filter))
+
+.子程序 GetScreenHeight, 整数型, 公开
+
+返回 (obj.数值方法 (“GetScreenHeight”))
+
+.子程序 GetResultCount, 整数型, 公开
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“GetResultCount”, str))
+
+.子程序 Is64Bit, 整数型, 公开
+
+返回 (obj.数值方法 (“Is64Bit”))
+
+.子程序 AsmClear, 整数型, 公开
+
+返回 (obj.数值方法 (“AsmClear”))
+
+.子程序 LeftDoubleClick, 整数型, 公开
+
+返回 (obj.数值方法 (“LeftDoubleClick”))
+
+.子程序 FoobarClose, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FoobarClose”, hwnd))
+
+.子程序 FindWindowSuper, 整数型, 公开
+.参数 spec1, 文本型
+.参数 flag1, 整数型
+.参数 type1, 整数型
+.参数 spec2, 文本型
+.参数 flag2, 整数型
+.参数 type2, 整数型
+
+返回 (obj.数值方法 (“FindWindowSuper”, spec1, flag1, type1, spec2, flag2, type2))
+
+.子程序 FaqCaptureString, 整数型, 公开
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“FaqCaptureString”, str))
+
+.子程序 HackSpeed, 整数型, 公开
+.参数 rate, 双精度小数型
+
+返回 (obj.数值方法 (“HackSpeed”, rate))
+
+.子程序 EnumIniKey, 文本型, 公开
+.参数 section, 文本型
+.参数 file_name, 文本型
+
+返回 (obj.文本方法 (“EnumIniKey”, section, file_name))
+
+.子程序 FindColorE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindColorE”, x1, y1, x2, y2, color, sim, dir))
+
+.子程序 DisableScreenSave, 整数型, 公开
+
+返回 (obj.数值方法 (“DisableScreenSave”))
+
+.子程序 FindPicSim, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindPicSim”, x1, y1, x2, y2, pic_name, delta_color, sim, dir, x, y))
+
+.子程序 StrStr, 整数型, 公开
+.参数 s, 文本型
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“StrStr”, s, str))
+
+.子程序 DownCpu, 整数型, 公开
+.参数 tpe, 整数型
+.参数 rate, 整数型
+
+返回 (obj.数值方法 (“DownCpu”, tpe, rate))
+
+.子程序 IsBind, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“IsBind”, hwnd))
+
+.子程序 DecodeFile, 整数型, 公开
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“DecodeFile”, file_name, pwd))
+
+.子程序 SetMinRowGap, 整数型, 公开
+.参数 row_gap, 整数型
+
+返回 (obj.数值方法 (“SetMinRowGap”, row_gap))
+
+.子程序 GetWordResultPos, 整数型, 公开
+.参数 str, 文本型
+.参数 index, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“GetWordResultPos”, str, index, x, y))
+
+.子程序 CapturePng, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“CapturePng”, x1, y1, x2, y2, file_name))
+
+.子程序 CheckUAC, 整数型, 公开
+
+返回 (obj.数值方法 (“CheckUAC”))
+
+.子程序 FindPicSimMem, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindPicSimMem”, x1, y1, x2, y2, pic_info, delta_color, sim, dir, x, y))
+
+.子程序 FreeProcessMemory, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FreeProcessMemory”, hwnd))
+
+.子程序 FindDouble, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 double_value_min, 双精度小数型
+.参数 double_value_max, 双精度小数型
+
+返回 (obj.文本方法 (“FindDouble”, hwnd, addr_range, double_value_min, double_value_max))
+
+.子程序 ReadFloat, 小数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+
+返回 (obj.数值方法 (“ReadFloat”, hwnd, addr))
+
+.子程序 ReadInt, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 tpe, 整数型
+
+返回 (obj.数值方法 (“ReadInt”, hwnd, addr, tpe))
+
+.子程序 GetClientRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x1, 整数型,参考
+.参数 y1, 整数型,参考
+.参数 x2, 整数型,参考
+.参数 y2, 整数型,参考
+
+返回 (obj.数值方法 (“GetClientRect”, hwnd, x1, y1, x2, y2))
+
+.子程序 GetDir, 文本型, 公开
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“GetDir”, tpe))
+
+.子程序 EnableGetColorByCapture, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableGetColorByCapture”, en))
+
+.子程序 EnumWindow, 文本型, 公开
+.参数 parent, 整数型
+.参数 title, 文本型
+.参数 class_name, 文本型
+.参数 filter, 整数型
+
+返回 (obj.文本方法 (“EnumWindow”, parent, title, class_name, filter))
+
+.子程序 EnableFakeActive, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableFakeActive”, en))
+
+.子程序 EnableMouseAccuracy, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableMouseAccuracy”, en))
+
+.子程序 ScreenToClient, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“ScreenToClient”, hwnd, x, y))
+
+.子程序 SetDisplayDelay, 整数型, 公开
+.参数 t, 整数型
+
+返回 (obj.数值方法 (“SetDisplayDelay”, t))
+
+.子程序 WriteIni, 整数型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 v, 文本型
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“WriteIni”, section, key, v, file_name))
+
+.子程序 KeyPressChar, 整数型, 公开
+.参数 key_str, 文本型
+
+返回 (obj.数值方法 (“KeyPressChar”, key_str))
+
+.子程序 FindMultiColorEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 first_color, 文本型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindMultiColorEx”, x1, y1, x2, y2, first_color, offset_color, sim, dir))
+
+.子程序 FindShape, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindShape”, x1, y1, x2, y2, offset_color, sim, dir, x, y))
+
+.子程序 GetBasePath, 文本型, 公开
+
+返回 (obj.文本方法 (“GetBasePath”))
+
+.子程序 BindWindow, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 display, 文本型
+.参数 mouse, 文本型
+.参数 keypad, 文本型
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“BindWindow”, hwnd, display, mouse, keypad, mode))
+
+.子程序 SetScreen, 整数型, 公开
+.参数 width, 整数型
+.参数 height, 整数型
+.参数 depth, 整数型
+
+返回 (obj.数值方法 (“SetScreen”, width, height, depth))
+
+.子程序 GetWindow, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 flag, 整数型
+
+返回 (obj.数值方法 (“GetWindow”, hwnd, flag))
+
+.子程序 GetColorBGR, 文本型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.文本方法 (“GetColorBGR”, x, y))
+
+.子程序 EnableRealKeypad, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableRealKeypad”, en))
+
+.子程序 ClearDict, 整数型, 公开
+.参数 index, 整数型
+
+返回 (obj.数值方法 (“ClearDict”, index))
+
+.子程序 SetExitThread, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“SetExitThread”, en))
+
+.子程序 GetDiskSerial, 文本型, 公开
+.参数 index, 整数型
+
+返回 (obj.文本方法 (“GetDiskSerial”, index))
+
+.子程序 SendPaste, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“SendPaste”, hwnd))
+
+.子程序 FindPicSimMemE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicSimMemE”, x1, y1, x2, y2, pic_info, delta_color, sim, dir))
+
+.子程序 MoveTo, 整数型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.数值方法 (“MoveTo”, x, y))
+
+.子程序 RegNoMac, 整数型, 公开
+.参数 code, 文本型
+.参数 Ver, 文本型
+
+返回 (obj.数值方法 (“RegNoMac”, code, Ver))
+
+.子程序 GetWindowClass, 文本型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.文本方法 (“GetWindowClass”, hwnd))
+
+.子程序 GetColorHSV, 文本型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.文本方法 (“GetColorHSV”, x, y))
+
+.子程序 GetCursorSpot, 文本型, 公开
+
+返回 (obj.文本方法 (“GetCursorSpot”))
+
+.子程序 GetCpuUsage, 整数型, 公开
+
+返回 (obj.数值方法 (“GetCpuUsage”))
+
+.子程序 WriteStringAddr, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 tpe, 整数型
+.参数 v, 文本型
+
+返回 (obj.数值方法 (“WriteStringAddr”, hwnd, 取变量地址(addr), tpe, v))
+
+.子程序 FindStrFastEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrFastEx”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 FindShapeEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 offset_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindShapeEx”, x1, y1, x2, y2, offset_color, sim, dir))
+
+.子程序 Stop, 整数型, 公开
+.参数 id, 整数型
+
+返回 (obj.数值方法 (“Stop”, id))
+
+.子程序 CmpColor, 整数型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.数值方法 (“CmpColor”, x, y, color, sim))
+
+.子程序 GetColorNum, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.数值方法 (“GetColorNum”, x1, y1, x2, y2, color, sim))
+
+.子程序 EnableKeypadMsg, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableKeypadMsg”, en))
+
+.子程序 FaqGetSize, 整数型, 公开
+.参数 handle, 整数型
+
+返回 (obj.数值方法 (“FaqGetSize”, handle))
+
+.子程序 FaqCaptureFromFile, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 file_name, 文本型
+.参数 quality, 整数型
+
+返回 (obj.数值方法 (“FaqCaptureFromFile”, x1, y1, x2, y2, file_name, quality))
+
+.子程序 LoadPic, 整数型, 公开
+.参数 pic_name, 文本型
+
+返回 (obj.数值方法 (“LoadPic”, pic_name))
+
+.子程序 SetDisplayRefreshDelay, 整数型, 公开
+.参数 t, 整数型
+
+返回 (obj.数值方法 (“SetDisplayRefreshDelay”, t))
+
+.子程序 FindNearestPos, 文本型, 公开
+.参数 all_pos, 文本型
+.参数 tpe, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.文本方法 (“FindNearestPos”, all_pos, tpe, x, y))
+
+.子程序 FindPicSimMemEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 整数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicSimMemEx”, x1, y1, x2, y2, pic_info, delta_color, sim, dir))
+
+.子程序 CopyFile, 整数型, 公开
+.参数 src_file, 文本型
+.参数 dst_file, 文本型
+.参数 over, 整数型
+
+返回 (obj.数值方法 (“CopyFile”, src_file, dst_file, over))
+
+.子程序 GetPath, 文本型, 公开
+
+返回 (obj.文本方法 (“GetPath”))
+
+.子程序 GetEnv, 文本型, 公开
+.参数 index, 整数型
+.参数 name, 文本型
+
+返回 (obj.文本方法 (“GetEnv”, index, name))
+
+.子程序 UnBindWindow, 整数型, 公开
+
+返回 (obj.数值方法 (“UnBindWindow”))
+
+.子程序 FindStrFast, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindStrFast”, x1, y1, x2, y2, str, color, sim, x, y))
+
+.子程序 GetSystemInfo, 文本型, 公开
+.参数 tpe, 文本型
+.参数 method, 整数型
+
+返回 (obj.文本方法 (“GetSystemInfo”, tpe, method))
+
+.子程序 RGB2BGR, 文本型, 公开
+.参数 rgb_color, 文本型
+
+返回 (obj.文本方法 (“RGB2BGR”, rgb_color))
+
+.子程序 MoveR, 整数型, 公开
+.参数 rx, 整数型
+.参数 ry, 整数型
+
+返回 (obj.数值方法 (“MoveR”, rx, ry))
+
+.子程序 FindPicE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicE”, x1, y1, x2, y2, pic_name, delta_color, sim, dir))
+
+.子程序 GetProcessInfo, 文本型, 公开
+.参数 pid, 整数型
+
+返回 (obj.文本方法 (“GetProcessInfo”, pid))
+
+.子程序 SetLocale, 整数型, 公开
+
+返回 (obj.数值方法 (“SetLocale”))
+
+.子程序 FaqPost, 整数型, 公开
+.参数 server, 文本型
+.参数 handle, 整数型
+.参数 request_type, 整数型
+.参数 time_out, 整数型
+
+返回 (obj.数值方法 (“FaqPost”, server, handle, request_type, time_out))
+
+.子程序 GetBindWindow, 整数型, 公开
+
+返回 (obj.数值方法 (“GetBindWindow”))
+
+.子程序 TerminateProcess, 整数型, 公开
+.参数 pid, 整数型
+
+返回 (obj.数值方法 (“TerminateProcess”, pid))
+
+.子程序 EnablePicCache, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnablePicCache”, en))
+
+.子程序 FindPicMemEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicMemEx”, x1, y1, x2, y2, pic_info, delta_color, sim, dir))
+
+.子程序 FindPicMemExZjj, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_info, 字节集,参考
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.局部变量 addr, 整数型
+.局部变量 size, 整数型
+.局部变量 info, 文本型
+
+addr ＝ GetZjjAddr (pic_info)
+size ＝ 取字节集长度 (pic_info)
+info ＝ “”
+info = AppendPicAddr(info,addr,size)
+返回 (obj.文本方法 (“FindPicMemEx”, x1, y1, x2, y2, info, delta_color, sim, dir))
+
+.子程序 GetModuleSize, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 module_name, 文本型
+
+返回 (obj.数值方法 (“GetModuleSize”, hwnd, module_name))
+
+.子程序 FoobarUpdate, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FoobarUpdate”, hwnd))
+
+.子程序 GetID, 整数型, 公开
+
+返回 (obj.数值方法 (“GetID”))
+
+.子程序 FindDoubleEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 double_value_min, 双精度小数型
+.参数 double_value_max, 双精度小数型
+.参数 steps, 整数型
+.参数 multi_thread, 整数型
+.参数 mode, 整数型
+
+返回 (obj.文本方法 (“FindDoubleEx”, hwnd, addr_range, double_value_min, double_value_max, steps, multi_thread, mode))
+
+.子程序 GetWindowProcessPath, 文本型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.文本方法 (“GetWindowProcessPath”, hwnd))
+
+.子程序 WriteDouble, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 v, 双精度小数型
+
+返回 (obj.数值方法 (“WriteDouble”, hwnd, addr, v))
+
+.子程序 WriteInt, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 tpe, 整数型
+.参数 v, 长整数型
+
+返回 (obj.数值方法 (“WriteInt”, hwnd, addr, tpe, 取变量地址(v)))
+
+.子程序 EnableMouseMsg, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableMouseMsg”, en))
+
+.子程序 FindWindow, 整数型, 公开
+.参数 class_name, 文本型
+.参数 title_name, 文本型
+
+返回 (obj.数值方法 (“FindWindow”, class_name, title_name))
+
+.子程序 FreeScreenData, 整数型, 公开
+.参数 handle, 整数型
+
+返回 (obj.数值方法 (“FreeScreenData”, handle))
+
+.子程序 SetColGapNoDict, 整数型, 公开
+.参数 col_gap, 整数型
+
+返回 (obj.数值方法 (“SetColGapNoDict”, col_gap))
+
+.子程序 VirtualQueryEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 pmbi, 整数型
+
+返回 (obj.文本方法 (“VirtualQueryEx”, hwnd, 取变量地址(addr), pmbi))
+
+.子程序 FindColorBlockEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 count, 整数型
+.参数 width, 整数型
+.参数 height, 整数型
+
+返回 (obj.文本方法 (“FindColorBlockEx”, x1, y1, x2, y2, color, sim, count, width, height))
+
+.子程序 SetWindowTransparent, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 v, 整数型
+
+返回 (obj.数值方法 (“SetWindowTransparent”, hwnd, v))
+
+.子程序 EnableRealMouse, 整数型, 公开
+.参数 en, 整数型
+.参数 mousedelay, 整数型
+.参数 mousestep, 整数型
+
+返回 (obj.数值方法 (“EnableRealMouse”, en, mousedelay, mousestep))
+
+.子程序 EnumIniSection, 文本型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.文本方法 (“EnumIniSection”, file_name))
+
+.子程序 ExecuteCmd, 文本型, 公开
+.参数 cmd, 文本型
+.参数 current_dir, 文本型
+.参数 time_out, 整数型
+
+返回 (obj.文本方法 (“ExecuteCmd”, cmd, current_dir, time_out))
+
+.子程序 MoveToEx, 文本型, 公开
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+
+返回 (obj.文本方法 (“MoveToEx”, x, y, w, h))
+
+.子程序 FindData, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 data, 文本型
+
+返回 (obj.文本方法 (“FindData”, hwnd, addr_range, data))
+
+.子程序 FoobarSetSave, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 file_name, 文本型
+.参数 en, 整数型
+.参数 header, 文本型
+
+返回 (obj.数值方法 (“FoobarSetSave”, hwnd, file_name, en, header))
+
+.子程序 Delays, 整数型, 公开
+.参数 min_s, 整数型
+.参数 max_s, 整数型
+
+返回 (obj.数值方法 (“Delays”, min_s, max_s))
+
+.子程序 MiddleDown, 整数型, 公开
+
+返回 (obj.数值方法 (“MiddleDown”))
+
+.子程序 GetMac, 文本型, 公开
+
+返回 (obj.文本方法 (“GetMac”))
+
+.子程序 GetFps, 整数型, 公开
+
+返回 (obj.数值方法 (“GetFps”))
+
+.子程序 ActiveInputMethod, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 id, 文本型
+
+返回 (obj.数值方法 (“ActiveInputMethod”, hwnd, id))
+
+.子程序 Log, 整数型, 公开
+.参数 info, 文本型
+
+返回 (obj.数值方法 (“Log”, info))
+
+.子程序 Capture, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“Capture”, x1, y1, x2, y2, file_name))
+
+.子程序 FoobarTextRect, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+
+返回 (obj.数值方法 (“FoobarTextRect”, hwnd, x, y, w, h))
+
+.子程序 MiddleClick, 整数型, 公开
+
+返回 (obj.数值方法 (“MiddleClick”))
+
+.子程序 FindStringEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 string_value, 文本型
+.参数 tpe, 整数型
+.参数 steps, 整数型
+.参数 multi_thread, 整数型
+.参数 mode, 整数型
+
+返回 (obj.文本方法 (“FindStringEx”, hwnd, addr_range, string_value, tpe, steps, multi_thread, mode))
+
+.子程序 EnumProcess, 文本型, 公开
+.参数 name, 文本型
+
+返回 (obj.文本方法 (“EnumProcess”, name))
+
+.子程序 SetWordGap, 整数型, 公开
+.参数 word_gap, 整数型
+
+返回 (obj.数值方法 (“SetWordGap”, word_gap))
+
+.子程序 ReadIntAddr, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 tpe, 整数型
+
+返回 (obj.数值方法 (“ReadIntAddr”, hwnd, 取变量地址(addr), tpe))
+
+.子程序 SetFindPicMultithreadCount, 整数型, 公开
+.参数 count, 整数型
+
+返回 (obj.数值方法 (“SetFindPicMultithreadCount”, count))
+
+.子程序 WriteIniPwd, 整数型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 v, 文本型
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“WriteIniPwd”, section, key, v, file_name, pwd))
+
+.子程序 SelectFile, 文本型, 公开
+
+返回 (obj.文本方法 (“SelectFile”))
+
+.子程序 GetScreenData, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+
+返回 (obj.数值方法 (“GetScreenData”, x1, y1, x2, y2))
+
+.子程序 CheckInputMethod, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 id, 文本型
+
+返回 (obj.数值方法 (“CheckInputMethod”, hwnd, id))
+
+.子程序 FindStrFastExS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrFastExS”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 Md5, 文本型, 公开
+.参数 str, 文本型
+
+返回 (obj.文本方法 (“Md5”, str))
+
+.子程序 SetMemoryFindResultToFile, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“SetMemoryFindResultToFile”, file_name))
+
+.子程序 ReadFloatAddr, 小数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+
+返回 (obj.数值方法 (“ReadFloatAddr”, hwnd, 取变量地址(addr)))
+
+.子程序 FoobarUnlock, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“FoobarUnlock”, hwnd))
+
+.子程序 GetDictCount, 整数型, 公开
+.参数 index, 整数型
+
+返回 (obj.数值方法 (“GetDictCount”, index))
+
+.子程序 FindWindowEx, 整数型, 公开
+.参数 parent, 整数型
+.参数 class_name, 文本型
+.参数 title_name, 文本型
+
+返回 (obj.数值方法 (“FindWindowEx”, parent, class_name, title_name))
+
+.子程序 WriteIntAddr, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 tpe, 整数型
+.参数 v, 长整数型
+
+返回 (obj.数值方法 (“WriteIntAddr”, hwnd, 取变量地址(addr), tpe, 取变量地址(v)))
+
+.子程序 Reg, 整数型, 公开
+.参数 code, 文本型
+.参数 Ver, 文本型
+
+返回 (obj.数值方法 (“Reg”, code, Ver))
+
+.子程序 CaptureGif, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 file_name, 文本型
+.参数 delay, 整数型
+.参数 time, 整数型
+
+返回 (obj.数值方法 (“CaptureGif”, x1, y1, x2, y2, file_name, delay, time))
+
+.子程序 SetSimMode, 整数型, 公开
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“SetSimMode”, mode))
+
+.子程序 DownloadFile, 整数型, 公开
+.参数 url, 文本型
+.参数 save_file, 文本型
+.参数 timeout, 整数型
+
+返回 (obj.数值方法 (“DownloadFile”, url, save_file, timeout))
+
+.子程序 CapturePre, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“CapturePre”, file_name))
+
+.子程序 CreateFolder, 整数型, 公开
+.参数 folder_name, 文本型
+
+返回 (obj.数值方法 (“CreateFolder”, folder_name))
+
+.子程序 VirtualFreeEx, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+
+返回 (obj.数值方法 (“VirtualFreeEx”, hwnd, 取变量地址(addr)))
+
+.子程序 WriteFloat, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 v, 小数型
+
+返回 (obj.数值方法 (“WriteFloat”, hwnd, addr, v))
+
+.子程序 FindColorBlock, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 count, 整数型
+.参数 width, 整数型
+.参数 height, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindColorBlock”, x1, y1, x2, y2, color, sim, count, width, height, x, y))
+
+.子程序 KeyUp, 整数型, 公开
+.参数 vk, 整数型
+
+返回 (obj.数值方法 (“KeyUp”, vk))
+
+.子程序 WriteString, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 tpe, 整数型
+.参数 v, 文本型
+
+返回 (obj.数值方法 (“WriteString”, hwnd, addr, tpe, v))
+
+.子程序 Int64ToInt32, 整数型, 公开
+.参数 v, 长整数型
+
+返回 (obj.数值方法 (“Int64ToInt32”, 取变量地址(v)))
+
+.子程序 FoobarTextLineGap, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 gap, 整数型
+
+返回 (obj.数值方法 (“FoobarTextLineGap”, hwnd, gap))
+
+.子程序 SelectDirectory, 文本型, 公开
+
+返回 (obj.文本方法 (“SelectDirectory”))
+
+.子程序 FoobarSetTrans, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 trans, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.数值方法 (“FoobarSetTrans”, hwnd, trans, color, sim))
+
+.子程序 IsSurrpotVt, 整数型, 公开
+
+返回 (obj.数值方法 (“IsSurrpotVt”))
+
+.子程序 FoobarSetFont, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 font_name, 文本型
+.参数 size, 整数型
+.参数 flag, 整数型
+
+返回 (obj.数值方法 (“FoobarSetFont”, hwnd, font_name, size, flag))
+
+.子程序 OcrInFile, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“OcrInFile”, x1, y1, x2, y2, pic_name, color, sim))
+
+.子程序 DmGuardParams, 文本型, 公开
+.参数 cmd, 文本型
+.参数 sub_cmd, 文本型
+.参数 param, 文本型
+
+返回 (obj.文本方法 (“DmGuardParams”, cmd, sub_cmd, param))
+
+.子程序 SortPosDistance, 文本型, 公开
+.参数 all_pos, 文本型
+.参数 tpe, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.文本方法 (“SortPosDistance”, all_pos, tpe, x, y))
+
+.子程序 MatchPicName, 文本型, 公开
+.参数 pic_name, 文本型
+
+返回 (obj.文本方法 (“MatchPicName”, pic_name))
+
+.子程序 FindFloatEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 float_value_min, 小数型
+.参数 float_value_max, 小数型
+.参数 steps, 整数型
+.参数 multi_thread, 整数型
+.参数 mode, 整数型
+
+返回 (obj.文本方法 (“FindFloatEx”, hwnd, addr_range, float_value_min, float_value_max, steps, multi_thread, mode))
+
+.子程序 VirtualAllocEx, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 size, 整数型
+.参数 tpe, 整数型
+
+返回 (obj.数值方法 (“VirtualAllocEx”, hwnd, 取变量地址(addr), size, tpe))
+
+.子程序 MoveWindow, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+
+返回 (obj.数值方法 (“MoveWindow”, hwnd, x, y))
+
+.子程序 IsFileExist, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“IsFileExist”, file_name))
+
+.子程序 ReadDataToBin, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 length, 整数型
+
+返回 (obj.数值方法 (“ReadDataToBin”, hwnd, addr, length))
+
+.子程序 ReadDataZjj, 字节集, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 size, 整数型
+.局部变量 datazjj, 字节集
+.局部变量 data, 整数型
+.局部变量 data_size, 整数型
+
+data = obj.数值方法 (“ReadDataToBin”, hwnd, addr, size)
+
+.如果 (data ＝ 0)
+    data_size = 0
+.否则
+    data_size = size
+.如果结束
+datazjj = 指针到字节集 (data, data_size)
+返回 (datazjj)
+
+.子程序 EnumIniKeyPwd, 文本型, 公开
+.参数 section, 文本型
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.文本方法 (“EnumIniKeyPwd”, section, file_name, pwd))
+
+.子程序 EnumIniSectionPwd, 文本型, 公开
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.文本方法 (“EnumIniSectionPwd”, file_name, pwd))
+
+.子程序 FindFloat, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 float_value_min, 小数型
+.参数 float_value_max, 小数型
+
+返回 (obj.文本方法 (“FindFloat”, hwnd, addr_range, float_value_min, float_value_max))
+
+.子程序 FindStrFastE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrFastE”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 SetExactOcr, 整数型, 公开
+.参数 exact_ocr, 整数型
+
+返回 (obj.数值方法 (“SetExactOcr”, exact_ocr))
+
+.子程序 LeftUp, 整数型, 公开
+
+返回 (obj.数值方法 (“LeftUp”))
+
+.子程序 GetNetTimeSafe, 文本型, 公开
+
+返回 (obj.文本方法 (“GetNetTimeSafe”))
+
+.子程序 FaqFetch, 文本型, 公开
+
+返回 (obj.文本方法 (“FaqFetch”))
+
+.子程序 ExcludePos, 文本型, 公开
+.参数 all_pos, 文本型
+.参数 tpe, 整数型
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+
+返回 (obj.文本方法 (“ExcludePos”, all_pos, tpe, x1, y1, x2, y2))
+
+.子程序 EncodeFile, 整数型, 公开
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“EncodeFile”, file_name, pwd))
+
+.子程序 ReadDoubleAddr, 双精度小数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+
+返回 (obj.数值方法 (“ReadDoubleAddr”, hwnd, 取变量地址(addr)))
+
+.子程序 GetForegroundFocus, 整数型, 公开
+
+返回 (obj.数值方法 (“GetForegroundFocus”))
+
+.子程序 FoobarStartGif, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 pic_name, 文本型
+.参数 repeat_limit, 整数型
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“FoobarStartGif”, hwnd, x, y, pic_name, repeat_limit, delay))
+
+.子程序 SetWordGapNoDict, 整数型, 公开
+.参数 word_gap, 整数型
+
+返回 (obj.数值方法 (“SetWordGapNoDict”, word_gap))
+
+.子程序 Ver, 文本型, 公开
+
+返回 (obj.文本方法 (“Ver”))
+
+.子程序 SetWindowSize, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 width, 整数型
+.参数 height, 整数型
+
+返回 (obj.数值方法 (“SetWindowSize”, hwnd, width, height))
+
+.子程序 GetScreenWidth, 整数型, 公开
+
+返回 (obj.数值方法 (“GetScreenWidth”))
+
+.子程序 GetAveHSV, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+
+返回 (obj.文本方法 (“GetAveHSV”, x1, y1, x2, y2))
+
+.子程序 WriteDataAddrFromBin, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 data, 整数型
+.参数 length, 整数型
+
+返回 (obj.数值方法 (“WriteDataAddrFromBin”, hwnd, 取变量地址(addr), data, length))
+
+.子程序 WriteDataAddrZjj, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 datazjj, 字节集,参考
+.局部变量 data, 整数型
+.局部变量 size, 整数型
+
+data ＝ GetZjjAddr (datazjj)
+size ＝ 取字节集长度 (datazjj)
+返回 (obj.数值方法 (“WriteDataAddrFromBin”, hwnd, 取变量地址(addr), data,size))
+
+.子程序 GetWordsNoDict, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+
+返回 (obj.文本方法 (“GetWordsNoDict”, x1, y1, x2, y2, color))
+
+.子程序 GetLocale, 整数型, 公开
+
+返回 (obj.数值方法 (“GetLocale”))
+
+.子程序 IntToData, 文本型, 公开
+.参数 int_value, 长整数型
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“IntToData”, 取变量地址(int_value), tpe))
+
+.子程序 BindWindowEx, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 display, 文本型
+.参数 mouse, 文本型
+.参数 keypad, 文本型
+.参数 public_desc, 文本型
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“BindWindowEx”, hwnd, display, mouse, keypad, public_desc, mode))
+
+.子程序 EnableDisplayDebug, 整数型, 公开
+.参数 enable_debug, 整数型
+
+返回 (obj.数值方法 (“EnableDisplayDebug”, enable_debug))
+
+.子程序 KeyPress, 整数型, 公开
+.参数 vk, 整数型
+
+返回 (obj.数值方法 (“KeyPress”, vk))
+
+.子程序 Beep, 整数型, 公开
+.参数 fre, 整数型
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“Beep”, fre, delay))
+
+.子程序 FindStrWithFontEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 font_name, 文本型
+.参数 font_size, 整数型
+.参数 flag, 整数型
+
+返回 (obj.文本方法 (“FindStrWithFontEx”, x1, y1, x2, y2, str, color, sim, font_name, font_size, flag))
+
+.子程序 DisablePowerSave, 整数型, 公开
+
+返回 (obj.数值方法 (“DisablePowerSave”))
+
+.子程序 FoobarDrawText, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 w, 整数型
+.参数 h, 整数型
+.参数 text, 文本型
+.参数 color, 文本型
+.参数 align, 整数型
+
+返回 (obj.数值方法 (“FoobarDrawText”, hwnd, x, y, w, h, text, color, align))
+
+.子程序 AsmAdd, 整数型, 公开
+.参数 asm_ins, 文本型
+
+返回 (obj.数值方法 (“AsmAdd”, asm_ins))
+
+.子程序 FindStrS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.文本方法 (“FindStrS”, x1, y1, x2, y2, str, color, sim, x, y))
+
+.子程序 ReleaseRef, 整数型, 公开
+
+返回 (obj.数值方法 (“ReleaseRef”))
+
+.子程序 SetClipboard, 整数型, 公开
+.参数 data, 文本型
+
+返回 (obj.数值方法 (“SetClipboard”, data))
+
+.子程序 GetMachineCodeNoMac, 文本型, 公开
+
+返回 (obj.文本方法 (“GetMachineCodeNoMac”))
+
+.子程序 ShowScrMsg, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 msg, 文本型
+.参数 color, 文本型
+
+返回 (obj.数值方法 (“ShowScrMsg”, x1, y1, x2, y2, msg, color))
+
+.子程序 LockInput, 整数型, 公开
+.参数 locks, 整数型
+
+返回 (obj.数值方法 (“LockInput”, locks))
+
+.子程序 GetScreenDataBmp, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 data, 整数型,参考
+.参数 size, 整数型,参考
+
+返回 (obj.数值方法 (“GetScreenDataBmp”, x1, y1, x2, y2, data, size))
+
+.子程序 ReadStringAddr, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 tpe, 整数型
+.参数 length, 整数型
+
+返回 (obj.文本方法 (“ReadStringAddr”, hwnd, 取变量地址(addr), tpe, length))
+
+.子程序 DeleteFile, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“DeleteFile”, file_name))
+
+.子程序 CaptureJpg, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 file_name, 文本型
+.参数 quality, 整数型
+
+返回 (obj.数值方法 (“CaptureJpg”, x1, y1, x2, y2, file_name, quality))
+
+.子程序 SendString2, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“SendString2”, hwnd, str))
+
+.子程序 GetOsBuildNumber, 整数型, 公开
+
+返回 (obj.数值方法 (“GetOsBuildNumber”))
+
+.子程序 GetAveRGB, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+
+返回 (obj.文本方法 (“GetAveRGB”, x1, y1, x2, y2))
+
+.子程序 SetDict, 整数型, 公开
+.参数 index, 整数型
+.参数 dict_name, 文本型
+
+返回 (obj.数值方法 (“SetDict”, index, dict_name))
+
+.子程序 DeleteIniPwd, 整数型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 file_name, 文本型
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“DeleteIniPwd”, section, key, file_name, pwd))
+
+.子程序 GetMousePointWindow, 整数型, 公开
+
+返回 (obj.数值方法 (“GetMousePointWindow”))
+
+.子程序 MoveFile, 整数型, 公开
+.参数 src_file, 文本型
+.参数 dst_file, 文本型
+
+返回 (obj.数值方法 (“MoveFile”, src_file, dst_file))
+
+.子程序 DeleteIni, 整数型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“DeleteIni”, section, key, file_name))
+
+.子程序 EnumWindowByProcessId, 文本型, 公开
+.参数 pid, 整数型
+.参数 title, 文本型
+.参数 class_name, 文本型
+.参数 filter, 整数型
+
+返回 (obj.文本方法 (“EnumWindowByProcessId”, pid, title, class_name, filter))
+
+.子程序 GetCpuType, 整数型, 公开
+
+返回 (obj.数值方法 (“GetCpuType”))
+
+.子程序 GetScreenDepth, 整数型, 公开
+
+返回 (obj.数值方法 (“GetScreenDepth”))
+
+.子程序 FindPicEx, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+
+返回 (obj.文本方法 (“FindPicEx”, x1, y1, x2, y2, pic_name, delta_color, sim, dir))
+
+.子程序 AsmCall, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“AsmCall”, hwnd, mode))
+
+.子程序 GetCursorShapeEx, 文本型, 公开
+.参数 tpe, 整数型
+
+返回 (obj.文本方法 (“GetCursorShapeEx”, tpe))
+
+.子程序 AsmCallEx, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 mode, 整数型
+.参数 base_addr, 文本型
+
+返回 (obj.数值方法 (“AsmCallEx”, hwnd, mode, base_addr))
+
+.子程序 SetWindowText, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 text, 文本型
+
+返回 (obj.数值方法 (“SetWindowText”, hwnd, text))
+
+.子程序 FindStrWithFontE, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 font_name, 文本型
+.参数 font_size, 整数型
+.参数 flag, 整数型
+
+返回 (obj.文本方法 (“FindStrWithFontE”, x1, y1, x2, y2, str, color, sim, font_name, font_size, flag))
+
+.子程序 FoobarTextPrintDir, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 dir, 整数型
+
+返回 (obj.数值方法 (“FoobarTextPrintDir”, hwnd, dir))
+
+.子程序 WriteFloatAddr, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 长整数型
+.参数 v, 小数型
+
+返回 (obj.数值方法 (“WriteFloatAddr”, hwnd, 取变量地址(addr), v))
+
+.子程序 DisableFontSmooth, 整数型, 公开
+
+返回 (obj.数值方法 (“DisableFontSmooth”))
+
+.子程序 FoobarStopGif, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 pic_name, 文本型
+
+返回 (obj.数值方法 (“FoobarStopGif”, hwnd, x, y, pic_name))
+
+.子程序 GetFileLength, 整数型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“GetFileLength”, file_name))
+
+.子程序 SpeedNormalGraphic, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“SpeedNormalGraphic”, en))
+
+.子程序 SetAero, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“SetAero”, en))
+
+.子程序 ReadIni, 文本型, 公开
+.参数 section, 文本型
+.参数 key, 文本型
+.参数 file_name, 文本型
+
+返回 (obj.文本方法 (“ReadIni”, section, key, file_name))
+
+.子程序 FindPicS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 pic_name, 文本型
+.参数 delta_color, 文本型
+.参数 sim, 双精度小数型
+.参数 dir, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.文本方法 (“FindPicS”, x1, y1, x2, y2, pic_name, delta_color, sim, dir, x, y))
+
+.子程序 GetMachineCode, 文本型, 公开
+
+返回 (obj.文本方法 (“GetMachineCode”))
+
+.子程序 GetDPI, 整数型, 公开
+
+返回 (obj.数值方法 (“GetDPI”))
+
+.子程序 SetExportDict, 整数型, 公开
+.参数 index, 整数型
+.参数 dict_name, 文本型
+
+返回 (obj.数值方法 (“SetExportDict”, index, dict_name))
+
+.子程序 SetMouseDelay, 整数型, 公开
+.参数 tpe, 文本型
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“SetMouseDelay”, tpe, delay))
+
+.子程序 DmGuardExtract, 整数型, 公开
+.参数 tpe, 文本型
+.参数 path, 文本型
+
+返回 (obj.数值方法 (“DmGuardExtract”, tpe, path))
+
+.子程序 SetShowErrorMsg, 整数型, 公开
+.参数 show, 整数型
+
+返回 (obj.数值方法 (“SetShowErrorMsg”, show))
+
+.子程序 ShowTaskBarIcon, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 is_show, 整数型
+
+返回 (obj.数值方法 (“ShowTaskBarIcon”, hwnd, is_show))
+
+.子程序 SetDictPwd, 整数型, 公开
+.参数 pwd, 文本型
+
+返回 (obj.数值方法 (“SetDictPwd”, pwd))
+
+.子程序 ReadFile, 文本型, 公开
+.参数 file_name, 文本型
+
+返回 (obj.文本方法 (“ReadFile”, file_name))
+
+.子程序 GetWindowThreadId, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“GetWindowThreadId”, hwnd))
+
+.子程序 FindInputMethod, 整数型, 公开
+.参数 id, 文本型
+
+返回 (obj.数值方法 (“FindInputMethod”, id))
+
+.子程序 CheckFontSmooth, 整数型, 公开
+
+返回 (obj.数值方法 (“CheckFontSmooth”))
+
+.子程序 CreateFoobarCustom, 整数型, 公开
+.参数 hwnd, 整数型
+.参数 x, 整数型
+.参数 y, 整数型
+.参数 pic, 文本型
+.参数 trans_color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.数值方法 (“CreateFoobarCustom”, hwnd, x, y, pic, trans_color, sim))
+
+.子程序 GetNetTimeByIp, 文本型, 公开
+.参数 ip, 文本型
+
+返回 (obj.文本方法 (“GetNetTimeByIp”, ip))
+
+.子程序 SaveDict, 整数型, 公开
+.参数 index, 整数型
+.参数 file_name, 文本型
+
+返回 (obj.数值方法 (“SaveDict”, index, file_name))
+
+.子程序 FindIntEx, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr_range, 文本型
+.参数 int_value_min, 长整数型
+.参数 int_value_max, 长整数型
+.参数 tpe, 整数型
+.参数 steps, 整数型
+.参数 multi_thread, 整数型
+.参数 mode, 整数型
+
+返回 (obj.文本方法 (“FindIntEx”, hwnd, addr_range, 取变量地址(int_value_min), 取变量地址(int_value_max), tpe, steps, multi_thread, mode))
+
+.子程序 SetMemoryHwndAsProcessId, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“SetMemoryHwndAsProcessId”, en))
+
+.子程序 GetWords, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“GetWords”, x1, y1, x2, y2, color, sim))
+
+.子程序 FaqRelease, 整数型, 公开
+.参数 handle, 整数型
+
+返回 (obj.数值方法 (“FaqRelease”, handle))
+
+.子程序 FindStrWithFont, 整数型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+.参数 font_name, 文本型
+.参数 font_size, 整数型
+.参数 flag, 整数型
+.参数 x, 整数型,参考
+.参数 y, 整数型,参考
+
+返回 (obj.数值方法 (“FindStrWithFont”, x1, y1, x2, y2, str, color, sim, font_name, font_size, flag, x, y))
+
+.子程序 EnterCri, 整数型, 公开
+
+返回 (obj.数值方法 (“EnterCri”))
+
+.子程序 GetMemoryUsage, 整数型, 公开
+
+返回 (obj.数值方法 (“GetMemoryUsage”))
+
+.子程序 GetWordResultCount, 整数型, 公开
+.参数 str, 文本型
+
+返回 (obj.数值方法 (“GetWordResultCount”, str))
+
+.子程序 GetMouseSpeed, 整数型, 公开
+
+返回 (obj.数值方法 (“GetMouseSpeed”))
+
+.子程序 KeyPressStr, 整数型, 公开
+.参数 key_str, 文本型
+.参数 delay, 整数型
+
+返回 (obj.数值方法 (“KeyPressStr”, key_str, delay))
+
+.子程序 Hex32, 文本型, 公开
+.参数 v, 整数型
+
+返回 (obj.文本方法 (“Hex32”, v))
+
+.子程序 EnableBind, 整数型, 公开
+.参数 en, 整数型
+
+返回 (obj.数值方法 (“EnableBind”, en))
+
+.子程序 DisableCloseDisplayAndSleep, 整数型, 公开
+
+返回 (obj.数值方法 (“DisableCloseDisplayAndSleep”))
+
+.子程序 ReadString, 文本型, 公开
+.参数 hwnd, 整数型
+.参数 addr, 文本型
+.参数 tpe, 整数型
+.参数 length, 整数型
+
+返回 (obj.文本方法 (“ReadString”, hwnd, addr, tpe, length))
+
+.子程序 ForceUnBindWindow, 整数型, 公开
+.参数 hwnd, 整数型
+
+返回 (obj.数值方法 (“ForceUnBindWindow”, hwnd))
+
+.子程序 RunApp, 整数型, 公开
+.参数 path, 文本型
+.参数 mode, 整数型
+
+返回 (obj.数值方法 (“RunApp”, path, mode))
+
+.子程序 OcrExOne, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“OcrExOne”, x1, y1, x2, y2, color, sim))
+
+.子程序 AsmSetTimeout, 整数型, 公开
+.参数 time_out, 整数型
+.参数 param, 整数型
+
+返回 (obj.数值方法 (“AsmSetTimeout”, time_out, param))
+
+.子程序 GetRemoteApiAddress, 长整数型, 公开
+.参数 hwnd, 整数型
+.参数 base_addr, 长整数型
+.参数 fun_name, 文本型
+
+返回 (obj.数值方法 (“GetRemoteApiAddress”, hwnd, 取变量地址(base_addr), fun_name))
+
+.子程序 FindStrExS, 文本型, 公开
+.参数 x1, 整数型
+.参数 y1, 整数型
+.参数 x2, 整数型
+.参数 y2, 整数型
+.参数 str, 文本型
+.参数 color, 文本型
+.参数 sim, 双精度小数型
+
+返回 (obj.文本方法 (“FindStrExS”, x1, y1, x2, y2, str, color, sim))
+
+.子程序 ExitOs, 整数型, 公开
+.参数 tpe, 整数型
+
+返回 (obj.数值方法 (“ExitOs”, tpe))
+

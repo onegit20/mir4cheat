@@ -1,0 +1,12 @@
+生成的obj.txt即是使用在E语言平台下的类库封装.(其中我增加了对字节集的设置字库(SetDictMemZjj)以及找图(FindPicMemZjj,FindPicMemExZjj,FindPicMemEZjj,AppendPicAddrZjj)) 
+另外我还增加ReadDataZjj,ReadDataAddrZjj,WriteDataZjj,WriteDataAddrZjj,4个接口,方便2进制读写进程.(只有7.1802之后的版本)
+以下是一个例子,在E语言新建一个exe工程,然后插入->类模块. 全选类模块的内容,把obj.txt中的内容粘贴到这里.
+注意,由于E语言的粘贴代码不能粘贴类名,所以你必须手动把这里的类名修改为MyDmsoft,并且添加一个私有成员obj,类型为对象
+然后把你的DLL regsvr32到系统中
+然后,创建一个按钮,在按钮事件函数中添加一个变量,名字为dm,类型为类的名字MyDmsoft
+代码中写入
+dm.创建() ' 创建对象
+信息框(dm.Ver(),)
+dm.释放() ' 释放对象
+另外7.1802之后版本的DLL生成的类库,必须要增加特殊功能支持库.否则取变量地址会无法编译.
+多线程模板.rar是一个完整的多线程示例,很有参考价值.

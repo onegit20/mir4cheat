@@ -1,0 +1,8 @@
+生成的obj.pas即是使用在Delphi平台下的类库封装. 
+以下是一个例子,在Delphi新建一个exe工程,然后工程(Project)->添加到工程(Add To Project)->选择obj.pas即可.
+然后把你的DLL regsvr32到系统中
+然后在你Uses里添加对obj单元的引用,创建一个按钮,在按钮事件里写入以下代码
+定义变量 var dm : dmsoft;
+dm := MyDmsoft.Create();  // 创建对象
+ShowMessage(dm.Ver());
+dm.Free;  // 释放对象,注意,delphi下必须手动释放!

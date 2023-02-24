@@ -1,0 +1,11 @@
+生成的obj.txt即是使用在火山平台下的类库封装.(其中我增加了对字节集的设置字库(SetDictMemZjj)以及找图(FindPicMemZjj,FindPicMemExZjj,FindPicMemEZjj,AppendPicAddrZjj)) 
+另外我还增加ReadDataZjj,ReadDataAddrZjj,WriteDataZjj,WriteDataAddrZjj,4个接口,方便2进制读写进程.(只有7.1802之后的版本)
+以下是一个例子,在火山平台新建一个exe工程,然后新添加一个文件obj.v
+由于火山平台无法粘贴代码,所以必须使用同目录下的火山代码输入.exe来把obj.txt中的内容打入obj.v
+然后把你的DLL regsvr32到系统中,或者用免注册注册到系统中. 然后和E语言一样,先调用一下CoInitializeEx,注意每个线程仅需要调用一次.
+然后,创建一个按钮,在按钮事件函数中添加一个变量,名字为dm,类型为类的名字MyDmsoft
+代码中写入
+dm.创建() ' 创建对象
+信息框(dm.Ver(),)
+dm.释放() ' 释放对象
+其它都和E语言类似,可以查看E语言相关的内容.另外切记在工程属性中，必须把目标平台改成32位.

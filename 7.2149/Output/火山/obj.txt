@@ -1,0 +1,2500 @@
+.包名,火山.大漠
+.类名,MyDmsoft,公开
+.常量名,SetPointer,整数,0,公开
+
+.成员变量名,obj,COM对象类
+
+.方法名,类_初始化,,,当基于本类的对象被创建后，此方法会被自动调用,,
+
+.方法名,类_清理,,,当基于本类的对象被销毁前，此方法会被自动调用,,
+释放 ()
+
+.方法名,创建,,公开,,,
+释放 ()
+obj.创建 ("dm.dmsoft")
+
+.方法名,释放,,公开,,,
+obj.清除 ()
+
+.方法名,SetRowGapNoDict,整数,公开,,,
+.参数名,row_gap,整数
+返回 (obj.方法("SetRowGapNoDict",整数,row_gap))
+
+.方法名,FindStrEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrEx",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,FindStrE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrE",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,DisAssemble,文本型,公开,,,
+.参数名,asm_code,文本型
+.参数名,base_addr,长整数
+.参数名,is_64bit,整数
+返回 (obj.方法("DisAssemble",文本型,asm_code,base_addr,is_64bit))
+
+.方法名,FindPicExS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindPicExS",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir))
+
+.方法名,OcrEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("OcrEx",文本型,x1,y1,x2,y2,color,sim))
+
+.方法名,GetColor,文本型,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("GetColor",文本型,x,y))
+
+.方法名,EnableFindPicMultithread,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableFindPicMultithread",整数,en))
+
+.方法名,SetEnv,整数,公开,,,
+.参数名,index,整数
+.参数名,name,文本型
+.参数名,value,文本型
+返回 (obj.方法("SetEnv",整数,index,name,value))
+
+.方法名,FindPic,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindPic",整数,x1,y1,x2,y2,pic_name,delta_color,sim,dir,x,y))
+
+.方法名,SetMinColGap,整数,公开,,,
+.参数名,col_gap,整数
+返回 (obj.方法("SetMinColGap",整数,col_gap))
+
+.方法名,StringToData,文本型,公开,,,
+.参数名,string_value,文本型
+.参数名,tpe,整数
+返回 (obj.方法("StringToData",文本型,string_value,tpe))
+
+.方法名,GetCommandLine,文本型,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetCommandLine",文本型,hwnd))
+
+.方法名,MiddleUp,整数,公开,,,
+返回 (obj.无参数方法("MiddleUp",整数))
+
+.方法名,EnableFontSmooth,整数,公开,,,
+返回 (obj.无参数方法("EnableFontSmooth",整数))
+
+.方法名,FreePic,整数,公开,,,
+.参数名,pic_name,文本型
+返回 (obj.方法("FreePic",整数,pic_name))
+
+.方法名,SetDisplayAcceler,整数,公开,,,
+.参数名,level,整数
+返回 (obj.方法("SetDisplayAcceler",整数,level))
+
+.方法名,Ocr,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("Ocr",文本型,x1,y1,x2,y2,color,sim))
+
+.方法名,GetWindowTitle,文本型,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetWindowTitle",文本型,hwnd))
+
+.方法名,LockDisplay,整数,公开,,,
+.参数名,locks,整数
+返回 (obj.方法("LockDisplay",整数,locks))
+
+.方法名,SetPath,整数,公开,,,
+.参数名,path,文本型
+返回 (obj.方法("SetPath",整数,path))
+
+.方法名,BGR2RGB,文本型,公开,,,
+.参数名,bgr_color,文本型
+返回 (obj.方法("BGR2RGB",文本型,bgr_color))
+
+.方法名,UnLoadDriver,整数,公开,,,
+返回 (obj.无参数方法("UnLoadDriver",整数))
+
+.方法名,GetOsType,整数,公开,,,
+返回 (obj.无参数方法("GetOsType",整数))
+
+.方法名,SetEnumWindowDelay,整数,公开,,,
+.参数名,delay,整数
+返回 (obj.方法("SetEnumWindowDelay",整数,delay))
+
+.方法名,FindMulColor,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindMulColor",整数,x1,y1,x2,y2,color,sim))
+
+.方法名,ReadDataAddr,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,length,整数
+返回 (obj.方法("ReadDataAddr",文本型,hwnd,addr,length))
+
+.方法名,SetKeypadDelay,整数,公开,,,
+.参数名,tpe,文本型
+.参数名,delay,整数
+返回 (obj.方法("SetKeypadDelay",整数,tpe,delay))
+
+.方法名,GetDiskModel,文本型,公开,,,
+.参数名,index,整数
+返回 (obj.方法("GetDiskModel",文本型,index))
+
+.方法名,AppendPicAddr,文本型,公开,,,
+.参数名,pic_info,文本型
+.参数名,addr,整数
+.参数名,size,整数
+返回 (obj.方法("AppendPicAddr",文本型,pic_info,addr,size))
+
+.方法名,AppendPicAddrZjj,文本型,公开,,,
+.参数名,pic_info,文本型
+.参数名,pic,字节集类
+.局部变量名,addr,整数
+.局部变量名,size,整数
+addr = 取字节集指针 (pic)
+size = 取字节集长度 (pic)
+返回 (AppendPicAddr(pic_info, addr, size))
+
+.方法名,GetSpecialWindow,整数,公开,,,
+.参数名,flag,整数
+返回 (obj.方法("GetSpecialWindow",整数,flag))
+
+.方法名,EnableMouseSync,整数,公开,,,
+.参数名,en,整数
+.参数名,time_out,整数
+返回 (obj.方法("EnableMouseSync",整数,en,time_out))
+
+.方法名,KeyUpChar,整数,公开,,,
+.参数名,key_str,文本型
+返回 (obj.方法("KeyUpChar",整数,key_str))
+
+.方法名,FaqCapture,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,quality,整数
+.参数名,delay,整数
+.参数名,time,整数
+返回 (obj.方法("FaqCapture",整数,x1,y1,x2,y2,quality,delay,time))
+
+.方法名,IsFolderExist,整数,公开,,,
+.参数名,folder,文本型
+返回 (obj.方法("IsFolderExist",整数,folder))
+
+.方法名,GetCursorShape,文本型,公开,,,
+返回 (obj.无参数方法("GetCursorShape",文本型))
+
+.方法名,EnableIme,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableIme",整数,en))
+
+.方法名,EnableKeypadPatch,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableKeypadPatch",整数,en))
+
+.方法名,FoobarLock,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FoobarLock",整数,hwnd))
+
+.方法名,Assemble,文本型,公开,,,
+.参数名,base_addr,长整数
+.参数名,is_64bit,整数
+返回 (obj.方法("Assemble",文本型,base_addr,is_64bit))
+
+.方法名,FindPicMemE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindPicMemE",文本型,x1,y1,x2,y2,pic_info,delta_color,sim,dir))
+
+.方法名,FindPicMemEZjj,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,字节集类
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.局部变量名,addr,整数
+.局部变量名,size,整数
+.局部变量名,info,文本型
+addr = 取字节集指针 (pic_info)
+size = 取字节集长度 (pic_info)
+info = ""
+info = AppendPicAddr(info,addr,size)
+返回 (FindPicMemE(x1,y1,x2,y2,info,delta_color,sim,dir))
+
+.方法名,FloatToData,文本型,公开,,,
+.参数名,float_value,小数
+返回 (obj.方法("FloatToData",文本型,float_value))
+
+.方法名,SetShowAsmErrorMsg,整数,公开,,,
+.参数名,show,整数
+返回 (obj.方法("SetShowAsmErrorMsg",整数,show))
+
+.方法名,FindPicMem,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindPicMem",整数,x1,y1,x2,y2,pic_info,delta_color,sim,dir,x,y))
+
+.方法名,FindPicMemZjj,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,字节集类
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+.局部变量名,addr,整数
+.局部变量名,size,整数
+.局部变量名,info,文本型
+addr = 取字节集指针 (pic_info)
+size = 取字节集长度 (pic_info)
+info = ""
+info = AppendPicAddr(info,addr,size)
+返回 (FindPicMem(x1,y1,x2,y2,info,delta_color,sim,dir,x,y))
+
+.方法名,FindStrFastS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindStrFastS",文本型,x1,y1,x2,y2,str,color,sim,x,y))
+
+.方法名,FoobarDrawLine,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,style,整数
+.参数名,width,整数
+返回 (obj.方法("FoobarDrawLine",整数,hwnd,x1,y1,x2,y2,color,style,width))
+
+.方法名,KeyDown,整数,公开,,,
+.参数名,vk,整数
+返回 (obj.方法("KeyDown",整数,vk))
+
+.方法名,GetDiskReversion,文本型,公开,,,
+.参数名,index,整数
+返回 (obj.方法("GetDiskReversion",文本型,index))
+
+.方法名,FindPicSimEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+返回 (obj.方法("FindPicSimEx",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir))
+
+.方法名,ReadFileData,文本型,公开,,,
+.参数名,file_name,文本型
+.参数名,start_pos,整数
+.参数名,end_pos,整数
+返回 (obj.方法("ReadFileData",文本型,file_name,start_pos,end_pos))
+
+.方法名,FindPicSimE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+返回 (obj.方法("FindPicSimE",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir))
+
+.方法名,GetRealPath,文本型,公开,,,
+.参数名,path,文本型
+返回 (obj.方法("GetRealPath",文本型,path))
+
+.方法名,DmGuardLoadCustom,整数,公开,,,
+.参数名,tpe,文本型
+.参数名,path,文本型
+返回 (obj.方法("DmGuardLoadCustom",整数,tpe,path))
+
+.方法名,GetClipboard,文本型,公开,,,
+返回 (obj.无参数方法("GetClipboard",文本型))
+
+.方法名,GetLastError,整数,公开,,,
+返回 (obj.无参数方法("GetLastError",整数))
+
+.方法名,WaitKey,整数,公开,,,
+.参数名,key_code,整数
+.参数名,time_out,整数
+返回 (obj.方法("WaitKey",整数,key_code,time_out))
+
+.方法名,LeaveCri,整数,公开,,,
+返回 (obj.无参数方法("LeaveCri",整数))
+
+.方法名,Play,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("Play",整数,file_name))
+
+.方法名,GetWordResultStr,文本型,公开,,,
+.参数名,str,文本型
+.参数名,index,整数
+返回 (obj.方法("GetWordResultStr",文本型,str,index))
+
+.方法名,FoobarDrawPic,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,pic,文本型
+.参数名,trans_color,文本型
+返回 (obj.方法("FoobarDrawPic",整数,hwnd,x,y,pic,trans_color))
+
+.方法名,GetKeyState,整数,公开,,,
+.参数名,vk,整数
+返回 (obj.方法("GetKeyState",整数,vk))
+
+.方法名,KeyDownChar,整数,公开,,,
+.参数名,key_str,文本型
+返回 (obj.方法("KeyDownChar",整数,key_str))
+
+.方法名,LoadPicByte,整数,公开,,,
+.参数名,addr,整数
+.参数名,size,整数
+.参数名,name,文本型
+返回 (obj.方法("LoadPicByte",整数,addr,size,name))
+
+.方法名,WheelUp,整数,公开,,,
+返回 (obj.无参数方法("WheelUp",整数))
+
+.方法名,OpenProcess,整数,公开,,,
+.参数名,pid,整数
+返回 (obj.方法("OpenProcess",整数,pid))
+
+.方法名,UseDict,整数,公开,,,
+.参数名,index,整数
+返回 (obj.方法("UseDict",整数,index))
+
+.方法名,ReadDataAddrToBin,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,length,整数
+返回 (obj.方法("ReadDataAddrToBin",整数,hwnd,addr,length))
+
+.方法名,ReadDataAddrZjj,字节集类,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,size,整数
+.局部变量名,datazjj,字节集类
+.局部变量名,data,整数
+.局部变量名,data_size,整数
+data = ReadDataAddrToBin(hwnd, addr, size)
+
+如果 (data == 0)
+    data_size = 0
+否则
+    data_size = size
+.如果结束
+datazjj = 指针到字节集 (data, data_size)
+返回 (datazjj)
+
+.方法名,IsDisplayDead,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,t,整数
+返回 (obj.方法("IsDisplayDead",整数,x1,y1,x2,y2,t))
+
+.方法名,SetUAC,整数,公开,,,
+.参数名,uac,整数
+返回 (obj.方法("SetUAC",整数,uac))
+
+.方法名,GetPicSize,文本型,公开,,,
+.参数名,pic_name,文本型
+返回 (obj.方法("GetPicSize",文本型,pic_name))
+
+.方法名,WriteFile,整数,公开,,,
+.参数名,file_name,文本型
+.参数名,content,文本型
+返回 (obj.方法("WriteFile",整数,file_name,content))
+
+.方法名,FoobarPrintText,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,text,文本型
+.参数名,color,文本型
+返回 (obj.方法("FoobarPrintText",整数,hwnd,text,color))
+
+.方法名,WriteData,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,data,文本型
+返回 (obj.方法("WriteData",整数,hwnd,addr,data))
+
+.方法名,DoubleToData,文本型,公开,,,
+.参数名,double_value,小数
+返回 (obj.方法("DoubleToData",文本型,double_value))
+
+.方法名,ImageToBmp,整数,公开,,,
+.参数名,pic_name,文本型
+.参数名,bmp_name,文本型
+返回 (obj.方法("ImageToBmp",整数,pic_name,bmp_name))
+
+.方法名,GetPointWindow,整数,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("GetPointWindow",整数,x,y))
+
+.方法名,ReadDouble,小数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+返回 (obj.方法("ReadDouble",小数,hwnd,addr))
+
+.方法名,SendCommand,整数,公开,,,
+.参数名,cmd,文本型
+返回 (obj.方法("SendCommand",整数,cmd))
+
+.方法名,GetCursorPos,整数,公开,,,
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("GetCursorPos",整数,x,y))
+
+.方法名,ReadIniPwd,文本型,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("ReadIniPwd",文本型,section,key,file_name,pwd))
+
+.方法名,FindDataEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,data,文本型
+.参数名,steps,整数
+.参数名,multi_thread,整数
+.参数名,mode,整数
+返回 (obj.方法("FindDataEx",文本型,hwnd,addr_range,data,steps,multi_thread,mode))
+
+.方法名,WriteDataAddr,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,data,文本型
+返回 (obj.方法("WriteDataAddr",整数,hwnd,addr,data))
+
+.方法名,ReadData,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,length,整数
+返回 (obj.方法("ReadData",文本型,hwnd,addr,length))
+
+.方法名,SetWordLineHeightNoDict,整数,公开,,,
+.参数名,line_height,整数
+返回 (obj.方法("SetWordLineHeightNoDict",整数,line_height))
+
+.方法名,FaqCancel,整数,公开,,,
+返回 (obj.无参数方法("FaqCancel",整数))
+
+.方法名,EnableShareDict,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableShareDict",整数,en))
+
+.方法名,SetWordLineHeight,整数,公开,,,
+.参数名,line_height,整数
+返回 (obj.方法("SetWordLineHeight",整数,line_height))
+
+.方法名,GetNowDict,整数,公开,,,
+返回 (obj.无参数方法("GetNowDict",整数))
+
+.方法名,SendStringIme,整数,公开,,,
+.参数名,str,文本型
+返回 (obj.方法("SendStringIme",整数,str))
+
+.方法名,DeleteFolder,整数,公开,,,
+.参数名,folder_name,文本型
+返回 (obj.方法("DeleteFolder",整数,folder_name))
+
+.方法名,GetForegroundWindow,整数,公开,,,
+返回 (obj.无参数方法("GetForegroundWindow",整数))
+
+.方法名,GetClientSize,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,width,整数类
+.参数名,height,整数类
+返回 (obj.方法("GetClientSize",整数,hwnd,width,height))
+
+.方法名,DelEnv,整数,公开,,,
+.参数名,index,整数
+.参数名,name,文本型
+返回 (obj.方法("DelEnv",整数,index,name))
+
+.方法名,CreateFoobarRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+返回 (obj.方法("CreateFoobarRect",整数,hwnd,x,y,w,h))
+
+.方法名,SetClientSize,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,width,整数
+.参数名,height,整数
+返回 (obj.方法("SetClientSize",整数,hwnd,width,height))
+
+.方法名,FindMultiColor,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,first_color,文本型
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindMultiColor",整数,x1,y1,x2,y2,first_color,offset_color,sim,dir,x,y))
+
+.方法名,delay,整数,公开,,,
+.参数名,mis,整数
+返回 (obj.方法("delay",整数,mis))
+
+.方法名,SetDictMem,整数,公开,,,
+.参数名,index,整数
+.参数名,addr,整数
+.参数名,size,整数
+返回 (obj.方法("SetDictMem",整数,index,addr,size))
+
+.方法名,SetDictMemZjj,整数,公开,,,
+.参数名,index,整数
+.参数名,dict,字节集类
+.局部变量名,addr,整数
+.局部变量名,size,整数
+addr = 取字节集指针 (dict)
+size = 取字节集长度 (dict)
+返回 (SetDictMem(index, addr, size))
+
+.方法名,FindMultiColorE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,first_color,文本型
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindMultiColorE",文本型,x1,y1,x2,y2,first_color,offset_color,sim,dir))
+
+.方法名,GetTime,整数,公开,,,
+返回 (obj.无参数方法("GetTime",整数))
+
+.方法名,SetDisplayInput,整数,公开,,,
+.参数名,mode,文本型
+返回 (obj.方法("SetDisplayInput",整数,mode))
+
+.方法名,FindColor,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindColor",整数,x1,y1,x2,y2,color,sim,dir,x,y))
+
+.方法名,SwitchBindWindow,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("SwitchBindWindow",整数,hwnd))
+
+.方法名,RightUp,整数,公开,,,
+返回 (obj.无参数方法("RightUp",整数))
+
+.方法名,FindStr,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindStr",整数,x1,y1,x2,y2,str,color,sim,x,y))
+
+.方法名,LeftClick,整数,公开,,,
+返回 (obj.无参数方法("LeftClick",整数))
+
+.方法名,SendString,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,str,文本型
+返回 (obj.方法("SendString",整数,hwnd,str))
+
+.方法名,GetNetTime,文本型,公开,,,
+返回 (obj.无参数方法("GetNetTime",文本型))
+
+.方法名,FoobarFillRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+返回 (obj.方法("FoobarFillRect",整数,hwnd,x1,y1,x2,y2,color))
+
+.方法名,SetWindowState,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,flag,整数
+返回 (obj.方法("SetWindowState",整数,hwnd,flag))
+
+.方法名,RegEx,整数,公开,,,
+.参数名,code,文本型
+.参数名,Ver,文本型
+.参数名,ip,文本型
+返回 (obj.方法("RegEx",整数,code,Ver,ip))
+
+.方法名,DmGuard,整数,公开,,,
+.参数名,en,整数
+.参数名,tpe,文本型
+返回 (obj.方法("DmGuard",整数,en,tpe))
+
+.方法名,SetMouseSpeed,整数,公开,,,
+.参数名,speed,整数
+返回 (obj.方法("SetMouseSpeed",整数,speed))
+
+.方法名,GetWindowRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x1,整数类
+.参数名,y1,整数类
+.参数名,x2,整数类
+.参数名,y2,整数类
+返回 (obj.方法("GetWindowRect",整数,hwnd,x1,y1,x2,y2))
+
+.方法名,GetDisplayInfo,文本型,公开,,,
+返回 (obj.无参数方法("GetDisplayInfo",文本型))
+
+.方法名,GetWindowProcessId,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetWindowProcessId",整数,hwnd))
+
+.方法名,EnableKeypadSync,整数,公开,,,
+.参数名,en,整数
+.参数名,time_out,整数
+返回 (obj.方法("EnableKeypadSync",整数,en,time_out))
+
+.方法名,FindString,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,string_value,文本型
+.参数名,tpe,整数
+返回 (obj.方法("FindString",文本型,hwnd,addr_range,string_value,tpe))
+
+.方法名,CreateFoobarEllipse,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+返回 (obj.方法("CreateFoobarEllipse",整数,hwnd,x,y,w,h))
+
+.方法名,WriteDoubleAddr,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,v,小数
+返回 (obj.方法("WriteDoubleAddr",整数,hwnd,addr,v))
+
+.方法名,SetPicPwd,整数,公开,,,
+.参数名,pwd,文本型
+返回 (obj.方法("SetPicPwd",整数,pwd))
+
+.方法名,MoveDD,整数,公开,,,
+.参数名,dx,整数
+.参数名,dy,整数
+返回 (obj.方法("MoveDD",整数,dx,dy))
+
+.方法名,AddDict,整数,公开,,,
+.参数名,index,整数
+.参数名,dict_info,文本型
+返回 (obj.方法("AddDict",整数,index,dict_info))
+
+.方法名,SendStringIme2,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,str,文本型
+.参数名,mode,整数
+返回 (obj.方法("SendStringIme2",整数,hwnd,str,mode))
+
+.方法名,InitCri,整数,公开,,,
+返回 (obj.无参数方法("InitCri",整数))
+
+.方法名,FetchWord,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,word,文本型
+返回 (obj.方法("FetchWord",文本型,x1,y1,x2,y2,color,word))
+
+.方法名,VirtualProtectEx,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,size,整数
+.参数名,tpe,整数
+.参数名,old_protect,整数
+返回 (obj.方法("VirtualProtectEx",整数,hwnd,addr,size,tpe,old_protect))
+
+.方法名,ClientToScreen,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("ClientToScreen",整数,hwnd,x,y))
+
+.方法名,LeftDown,整数,公开,,,
+返回 (obj.无参数方法("LeftDown",整数))
+
+.方法名,GetWindowState,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,flag,整数
+返回 (obj.方法("GetWindowState",整数,hwnd,flag))
+
+.方法名,Hex64,文本型,公开,,,
+.参数名,v,长整数
+返回 (obj.方法("Hex64",文本型,v))
+
+.方法名,RightDown,整数,公开,,,
+返回 (obj.无参数方法("RightDown",整数))
+
+.方法名,SetExcludeRegion,整数,公开,,,
+.参数名,tpe,整数
+.参数名,info,文本型
+返回 (obj.方法("SetExcludeRegion",整数,tpe,info))
+
+.方法名,RightClick,整数,公开,,,
+返回 (obj.无参数方法("RightClick",整数))
+
+.方法名,EnableSpeedDx,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableSpeedDx",整数,en))
+
+.方法名,GetModuleBaseAddr,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,module_name,文本型
+返回 (obj.方法("GetModuleBaseAddr",长整数,hwnd,module_name))
+
+.方法名,FindWindowByProcessId,整数,公开,,,
+.参数名,process_id,整数
+.参数名,class_name,文本型
+.参数名,title_name,文本型
+返回 (obj.方法("FindWindowByProcessId",整数,process_id,class_name,title_name))
+
+.方法名,FindShapeE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindShapeE",文本型,x1,y1,x2,y2,offset_color,sim,dir))
+
+.方法名,GetResultPos,整数,公开,,,
+.参数名,str,文本型
+.参数名,index,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("GetResultPos",整数,str,index,x,y))
+
+.方法名,FindColorEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindColorEx",文本型,x1,y1,x2,y2,color,sim,dir))
+
+.方法名,WheelDown,整数,公开,,,
+返回 (obj.无参数方法("WheelDown",整数))
+
+.方法名,FaqIsPosted,整数,公开,,,
+返回 (obj.无参数方法("FaqIsPosted",整数))
+
+.方法名,LockMouseRect,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+返回 (obj.方法("LockMouseRect",整数,x1,y1,x2,y2))
+
+.方法名,FoobarClearText,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FoobarClearText",整数,hwnd))
+
+.方法名,CreateFoobarRoundRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+.参数名,rw,整数
+.参数名,rh,整数
+返回 (obj.方法("CreateFoobarRoundRect",整数,hwnd,x,y,w,h,rw,rh))
+
+.方法名,SetInputDm,整数,公开,,,
+.参数名,input_dm,整数
+.参数名,rx,整数
+.参数名,ry,整数
+返回 (obj.方法("SetInputDm",整数,input_dm,rx,ry))
+
+.方法名,GetDict,文本型,公开,,,
+.参数名,index,整数
+.参数名,font_index,整数
+返回 (obj.方法("GetDict",文本型,index,font_index))
+
+.方法名,GetDictInfo,文本型,公开,,,
+.参数名,str,文本型
+.参数名,font_name,文本型
+.参数名,font_size,整数
+.参数名,flag,整数
+返回 (obj.方法("GetDictInfo",文本型,str,font_name,font_size,flag))
+
+.方法名,EnumWindowSuper,文本型,公开,,,
+.参数名,spec1,文本型
+.参数名,flag1,整数
+.参数名,type1,整数
+.参数名,spec2,文本型
+.参数名,flag2,整数
+.参数名,type2,整数
+.参数名,sort,整数
+返回 (obj.方法("EnumWindowSuper",文本型,spec1,flag1,type1,spec2,flag2,type2,sort))
+
+.方法名,WriteDataFromBin,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,data,整数
+.参数名,length,整数
+返回 (obj.方法("WriteDataFromBin",整数,hwnd,addr,data,length))
+
+.方法名,WriteDataZjj,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,datazjj,字节集类
+.局部变量名,data,整数
+.局部变量名,size,整数
+data = 取字节集指针 (datazjj)
+size = 取字节集长度 (datazjj)
+返回 (WriteDataFromBin(hwnd, addr, data,size))
+
+.方法名,FindInt,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,int_value_min,长整数
+.参数名,int_value_max,长整数
+.参数名,tpe,整数
+返回 (obj.方法("FindInt",文本型,hwnd,addr_range,int_value_min,int_value_max,tpe))
+
+.方法名,FindWindowByProcess,整数,公开,,,
+.参数名,process_name,文本型
+.参数名,class_name,文本型
+.参数名,title_name,文本型
+返回 (obj.方法("FindWindowByProcess",整数,process_name,class_name,title_name))
+
+.方法名,GetDmCount,整数,公开,,,
+返回 (obj.无参数方法("GetDmCount",整数))
+
+.方法名,RegExNoMac,整数,公开,,,
+.参数名,code,文本型
+.参数名,Ver,文本型
+.参数名,ip,文本型
+返回 (obj.方法("RegExNoMac",整数,code,Ver,ip))
+
+.方法名,SetParam64ToPointer,整数,公开,,,
+返回 (obj.无参数方法("SetParam64ToPointer",整数))
+
+.方法名,FaqSend,文本型,公开,,,
+.参数名,server,文本型
+.参数名,handle,整数
+.参数名,request_type,整数
+.参数名,time_out,整数
+返回 (obj.方法("FaqSend",文本型,server,handle,request_type,time_out))
+
+.方法名,EnumWindowByProcess,文本型,公开,,,
+.参数名,process_name,文本型
+.参数名,title,文本型
+.参数名,class_name,文本型
+.参数名,filter,整数
+返回 (obj.方法("EnumWindowByProcess",文本型,process_name,title,class_name,filter))
+
+.方法名,GetScreenHeight,整数,公开,,,
+返回 (obj.无参数方法("GetScreenHeight",整数))
+
+.方法名,GetResultCount,整数,公开,,,
+.参数名,str,文本型
+返回 (obj.方法("GetResultCount",整数,str))
+
+.方法名,Is64Bit,整数,公开,,,
+返回 (obj.无参数方法("Is64Bit",整数))
+
+.方法名,AsmClear,整数,公开,,,
+返回 (obj.无参数方法("AsmClear",整数))
+
+.方法名,LeftDoubleClick,整数,公开,,,
+返回 (obj.无参数方法("LeftDoubleClick",整数))
+
+.方法名,FoobarClose,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FoobarClose",整数,hwnd))
+
+.方法名,FindWindowSuper,整数,公开,,,
+.参数名,spec1,文本型
+.参数名,flag1,整数
+.参数名,type1,整数
+.参数名,spec2,文本型
+.参数名,flag2,整数
+.参数名,type2,整数
+返回 (obj.方法("FindWindowSuper",整数,spec1,flag1,type1,spec2,flag2,type2))
+
+.方法名,FaqCaptureString,整数,公开,,,
+.参数名,str,文本型
+返回 (obj.方法("FaqCaptureString",整数,str))
+
+.方法名,HackSpeed,整数,公开,,,
+.参数名,rate,小数
+返回 (obj.方法("HackSpeed",整数,rate))
+
+.方法名,EnumIniKey,文本型,公开,,,
+.参数名,section,文本型
+.参数名,file_name,文本型
+返回 (obj.方法("EnumIniKey",文本型,section,file_name))
+
+.方法名,FindColorE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindColorE",文本型,x1,y1,x2,y2,color,sim,dir))
+
+.方法名,DisableScreenSave,整数,公开,,,
+返回 (obj.无参数方法("DisableScreenSave",整数))
+
+.方法名,FindPicSim,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindPicSim",整数,x1,y1,x2,y2,pic_name,delta_color,sim,dir,x,y))
+
+.方法名,StrStr,整数,公开,,,
+.参数名,s,文本型
+.参数名,str,文本型
+返回 (obj.方法("StrStr",整数,s,str))
+
+.方法名,DownCpu,整数,公开,,,
+.参数名,tpe,整数
+.参数名,rate,整数
+返回 (obj.方法("DownCpu",整数,tpe,rate))
+
+.方法名,IsBind,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("IsBind",整数,hwnd))
+
+.方法名,DecodeFile,整数,公开,,,
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("DecodeFile",整数,file_name,pwd))
+
+.方法名,SetMinRowGap,整数,公开,,,
+.参数名,row_gap,整数
+返回 (obj.方法("SetMinRowGap",整数,row_gap))
+
+.方法名,GetWordResultPos,整数,公开,,,
+.参数名,str,文本型
+.参数名,index,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("GetWordResultPos",整数,str,index,x,y))
+
+.方法名,CapturePng,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,file_name,文本型
+返回 (obj.方法("CapturePng",整数,x1,y1,x2,y2,file_name))
+
+.方法名,CheckUAC,整数,公开,,,
+返回 (obj.无参数方法("CheckUAC",整数))
+
+.方法名,FindPicSimMem,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindPicSimMem",整数,x1,y1,x2,y2,pic_info,delta_color,sim,dir,x,y))
+
+.方法名,FreeProcessMemory,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FreeProcessMemory",整数,hwnd))
+
+.方法名,FindDouble,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,double_value_min,小数
+.参数名,double_value_max,小数
+返回 (obj.方法("FindDouble",文本型,hwnd,addr_range,double_value_min,double_value_max))
+
+.方法名,ReadFloat,小数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+返回 (obj.方法("ReadFloat",小数,hwnd,addr))
+
+.方法名,ReadInt,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,tpe,整数
+返回 (obj.方法("ReadInt",长整数,hwnd,addr,tpe))
+
+.方法名,GetClientRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x1,整数类
+.参数名,y1,整数类
+.参数名,x2,整数类
+.参数名,y2,整数类
+返回 (obj.方法("GetClientRect",整数,hwnd,x1,y1,x2,y2))
+
+.方法名,GetDir,文本型,公开,,,
+.参数名,tpe,整数
+返回 (obj.方法("GetDir",文本型,tpe))
+
+.方法名,EnableGetColorByCapture,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableGetColorByCapture",整数,en))
+
+.方法名,EnumWindow,文本型,公开,,,
+.参数名,parent,整数
+.参数名,title,文本型
+.参数名,class_name,文本型
+.参数名,filter,整数
+返回 (obj.方法("EnumWindow",文本型,parent,title,class_name,filter))
+
+.方法名,EnableFakeActive,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableFakeActive",整数,en))
+
+.方法名,EnableMouseAccuracy,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableMouseAccuracy",整数,en))
+
+.方法名,ScreenToClient,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("ScreenToClient",整数,hwnd,x,y))
+
+.方法名,SetDisplayDelay,整数,公开,,,
+.参数名,t,整数
+返回 (obj.方法("SetDisplayDelay",整数,t))
+
+.方法名,WriteIni,整数,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,v,文本型
+.参数名,file_name,文本型
+返回 (obj.方法("WriteIni",整数,section,key,v,file_name))
+
+.方法名,KeyPressChar,整数,公开,,,
+.参数名,key_str,文本型
+返回 (obj.方法("KeyPressChar",整数,key_str))
+
+.方法名,FindMultiColorEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,first_color,文本型
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindMultiColorEx",文本型,x1,y1,x2,y2,first_color,offset_color,sim,dir))
+
+.方法名,FindShape,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindShape",整数,x1,y1,x2,y2,offset_color,sim,dir,x,y))
+
+.方法名,GetBasePath,文本型,公开,,,
+返回 (obj.无参数方法("GetBasePath",文本型))
+
+.方法名,BindWindow,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,display,文本型
+.参数名,mouse,文本型
+.参数名,keypad,文本型
+.参数名,mode,整数
+返回 (obj.方法("BindWindow",整数,hwnd,display,mouse,keypad,mode))
+
+.方法名,SetScreen,整数,公开,,,
+.参数名,width,整数
+.参数名,height,整数
+.参数名,depth,整数
+返回 (obj.方法("SetScreen",整数,width,height,depth))
+
+.方法名,GetWindow,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,flag,整数
+返回 (obj.方法("GetWindow",整数,hwnd,flag))
+
+.方法名,GetColorBGR,文本型,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("GetColorBGR",文本型,x,y))
+
+.方法名,EnableRealKeypad,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableRealKeypad",整数,en))
+
+.方法名,ClearDict,整数,公开,,,
+.参数名,index,整数
+返回 (obj.方法("ClearDict",整数,index))
+
+.方法名,SetExitThread,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("SetExitThread",整数,en))
+
+.方法名,GetDiskSerial,文本型,公开,,,
+.参数名,index,整数
+返回 (obj.方法("GetDiskSerial",文本型,index))
+
+.方法名,SendPaste,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("SendPaste",整数,hwnd))
+
+.方法名,FindPicSimMemE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+返回 (obj.方法("FindPicSimMemE",文本型,x1,y1,x2,y2,pic_info,delta_color,sim,dir))
+
+.方法名,MoveTo,整数,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("MoveTo",整数,x,y))
+
+.方法名,RegNoMac,整数,公开,,,
+.参数名,code,文本型
+.参数名,Ver,文本型
+返回 (obj.方法("RegNoMac",整数,code,Ver))
+
+.方法名,GetWindowClass,文本型,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetWindowClass",文本型,hwnd))
+
+.方法名,GetColorHSV,文本型,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("GetColorHSV",文本型,x,y))
+
+.方法名,GetCursorSpot,文本型,公开,,,
+返回 (obj.无参数方法("GetCursorSpot",文本型))
+
+.方法名,GetCpuUsage,整数,公开,,,
+返回 (obj.无参数方法("GetCpuUsage",整数))
+
+.方法名,WriteStringAddr,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,tpe,整数
+.参数名,v,文本型
+返回 (obj.方法("WriteStringAddr",整数,hwnd,addr,tpe,v))
+
+.方法名,FindStrFastEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrFastEx",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,FindShapeEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,offset_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindShapeEx",文本型,x1,y1,x2,y2,offset_color,sim,dir))
+
+.方法名,Stop,整数,公开,,,
+.参数名,id,整数
+返回 (obj.方法("Stop",整数,id))
+
+.方法名,CmpColor,整数,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("CmpColor",整数,x,y,color,sim))
+
+.方法名,GetColorNum,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("GetColorNum",整数,x1,y1,x2,y2,color,sim))
+
+.方法名,EnableKeypadMsg,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableKeypadMsg",整数,en))
+
+.方法名,FaqGetSize,整数,公开,,,
+.参数名,handle,整数
+返回 (obj.方法("FaqGetSize",整数,handle))
+
+.方法名,FaqCaptureFromFile,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,file_name,文本型
+.参数名,quality,整数
+返回 (obj.方法("FaqCaptureFromFile",整数,x1,y1,x2,y2,file_name,quality))
+
+.方法名,LoadPic,整数,公开,,,
+.参数名,pic_name,文本型
+返回 (obj.方法("LoadPic",整数,pic_name))
+
+.方法名,SetDisplayRefreshDelay,整数,公开,,,
+.参数名,t,整数
+返回 (obj.方法("SetDisplayRefreshDelay",整数,t))
+
+.方法名,FindNearestPos,文本型,公开,,,
+.参数名,all_pos,文本型
+.参数名,tpe,整数
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("FindNearestPos",文本型,all_pos,tpe,x,y))
+
+.方法名,FindPicSimMemEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,整数
+.参数名,dir,整数
+返回 (obj.方法("FindPicSimMemEx",文本型,x1,y1,x2,y2,pic_info,delta_color,sim,dir))
+
+.方法名,CopyFile,整数,公开,,,
+.参数名,src_file,文本型
+.参数名,dst_file,文本型
+.参数名,over,整数
+返回 (obj.方法("CopyFile",整数,src_file,dst_file,over))
+
+.方法名,GetPath,文本型,公开,,,
+返回 (obj.无参数方法("GetPath",文本型))
+
+.方法名,GetEnv,文本型,公开,,,
+.参数名,index,整数
+.参数名,name,文本型
+返回 (obj.方法("GetEnv",文本型,index,name))
+
+.方法名,UnBindWindow,整数,公开,,,
+返回 (obj.无参数方法("UnBindWindow",整数))
+
+.方法名,FindStrFast,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindStrFast",整数,x1,y1,x2,y2,str,color,sim,x,y))
+
+.方法名,GetSystemInfo,文本型,公开,,,
+.参数名,tpe,文本型
+.参数名,method,整数
+返回 (obj.方法("GetSystemInfo",文本型,tpe,method))
+
+.方法名,RGB2BGR,文本型,公开,,,
+.参数名,rgb_color,文本型
+返回 (obj.方法("RGB2BGR",文本型,rgb_color))
+
+.方法名,MoveR,整数,公开,,,
+.参数名,rx,整数
+.参数名,ry,整数
+返回 (obj.方法("MoveR",整数,rx,ry))
+
+.方法名,FindPicE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindPicE",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir))
+
+.方法名,GetProcessInfo,文本型,公开,,,
+.参数名,pid,整数
+返回 (obj.方法("GetProcessInfo",文本型,pid))
+
+.方法名,SetLocale,整数,公开,,,
+返回 (obj.无参数方法("SetLocale",整数))
+
+.方法名,FaqPost,整数,公开,,,
+.参数名,server,文本型
+.参数名,handle,整数
+.参数名,request_type,整数
+.参数名,time_out,整数
+返回 (obj.方法("FaqPost",整数,server,handle,request_type,time_out))
+
+.方法名,GetBindWindow,整数,公开,,,
+返回 (obj.无参数方法("GetBindWindow",整数))
+
+.方法名,TerminateProcess,整数,公开,,,
+.参数名,pid,整数
+返回 (obj.方法("TerminateProcess",整数,pid))
+
+.方法名,EnablePicCache,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnablePicCache",整数,en))
+
+.方法名,FindPicMemEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindPicMemEx",文本型,x1,y1,x2,y2,pic_info,delta_color,sim,dir))
+
+.方法名,FindPicMemExZjj,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_info,字节集类
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.局部变量名,addr,整数
+.局部变量名,size,整数
+.局部变量名,info,文本型
+addr = 取字节集指针 (pic_info)
+size = 取字节集长度 (pic_info)
+info = ""
+info = AppendPicAddr(info,addr,size)
+返回 (FindPicMemEx(x1,y1,x2,y2,info,delta_color,sim,dir))
+
+.方法名,GetModuleSize,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,module_name,文本型
+返回 (obj.方法("GetModuleSize",整数,hwnd,module_name))
+
+.方法名,FoobarUpdate,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FoobarUpdate",整数,hwnd))
+
+.方法名,GetID,整数,公开,,,
+返回 (obj.无参数方法("GetID",整数))
+
+.方法名,FindDoubleEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,double_value_min,小数
+.参数名,double_value_max,小数
+.参数名,steps,整数
+.参数名,multi_thread,整数
+.参数名,mode,整数
+返回 (obj.方法("FindDoubleEx",文本型,hwnd,addr_range,double_value_min,double_value_max,steps,multi_thread,mode))
+
+.方法名,GetWindowProcessPath,文本型,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetWindowProcessPath",文本型,hwnd))
+
+.方法名,WriteDouble,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,v,小数
+返回 (obj.方法("WriteDouble",整数,hwnd,addr,v))
+
+.方法名,WriteInt,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,tpe,整数
+.参数名,v,长整数
+返回 (obj.方法("WriteInt",整数,hwnd,addr,tpe,v))
+
+.方法名,EnableMouseMsg,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableMouseMsg",整数,en))
+
+.方法名,FindWindow,整数,公开,,,
+.参数名,class_name,文本型
+.参数名,title_name,文本型
+返回 (obj.方法("FindWindow",整数,class_name,title_name))
+
+.方法名,FreeScreenData,整数,公开,,,
+.参数名,handle,整数
+返回 (obj.方法("FreeScreenData",整数,handle))
+
+.方法名,SetColGapNoDict,整数,公开,,,
+.参数名,col_gap,整数
+返回 (obj.方法("SetColGapNoDict",整数,col_gap))
+
+.方法名,VirtualQueryEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,pmbi,整数
+返回 (obj.方法("VirtualQueryEx",文本型,hwnd,addr,pmbi))
+
+.方法名,FindColorBlockEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,count,整数
+.参数名,width,整数
+.参数名,height,整数
+返回 (obj.方法("FindColorBlockEx",文本型,x1,y1,x2,y2,color,sim,count,width,height))
+
+.方法名,SetWindowTransparent,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,v,整数
+返回 (obj.方法("SetWindowTransparent",整数,hwnd,v))
+
+.方法名,EnableRealMouse,整数,公开,,,
+.参数名,en,整数
+.参数名,mousedelay,整数
+.参数名,mousestep,整数
+返回 (obj.方法("EnableRealMouse",整数,en,mousedelay,mousestep))
+
+.方法名,EnumIniSection,文本型,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("EnumIniSection",文本型,file_name))
+
+.方法名,ExecuteCmd,文本型,公开,,,
+.参数名,cmd,文本型
+.参数名,current_dir,文本型
+.参数名,time_out,整数
+返回 (obj.方法("ExecuteCmd",文本型,cmd,current_dir,time_out))
+
+.方法名,MoveToEx,文本型,公开,,,
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+返回 (obj.方法("MoveToEx",文本型,x,y,w,h))
+
+.方法名,FindData,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,data,文本型
+返回 (obj.方法("FindData",文本型,hwnd,addr_range,data))
+
+.方法名,FoobarSetSave,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,file_name,文本型
+.参数名,en,整数
+.参数名,header,文本型
+返回 (obj.方法("FoobarSetSave",整数,hwnd,file_name,en,header))
+
+.方法名,Delays,整数,公开,,,
+.参数名,min_s,整数
+.参数名,max_s,整数
+返回 (obj.方法("Delays",整数,min_s,max_s))
+
+.方法名,MiddleDown,整数,公开,,,
+返回 (obj.无参数方法("MiddleDown",整数))
+
+.方法名,GetMac,文本型,公开,,,
+返回 (obj.无参数方法("GetMac",文本型))
+
+.方法名,GetFps,整数,公开,,,
+返回 (obj.无参数方法("GetFps",整数))
+
+.方法名,ActiveInputMethod,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,id,文本型
+返回 (obj.方法("ActiveInputMethod",整数,hwnd,id))
+
+.方法名,Log,整数,公开,,,
+.参数名,info,文本型
+返回 (obj.方法("Log",整数,info))
+
+.方法名,Capture,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,file_name,文本型
+返回 (obj.方法("Capture",整数,x1,y1,x2,y2,file_name))
+
+.方法名,FoobarTextRect,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+返回 (obj.方法("FoobarTextRect",整数,hwnd,x,y,w,h))
+
+.方法名,MiddleClick,整数,公开,,,
+返回 (obj.无参数方法("MiddleClick",整数))
+
+.方法名,FindStringEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,string_value,文本型
+.参数名,tpe,整数
+.参数名,steps,整数
+.参数名,multi_thread,整数
+.参数名,mode,整数
+返回 (obj.方法("FindStringEx",文本型,hwnd,addr_range,string_value,tpe,steps,multi_thread,mode))
+
+.方法名,EnumProcess,文本型,公开,,,
+.参数名,name,文本型
+返回 (obj.方法("EnumProcess",文本型,name))
+
+.方法名,SetWordGap,整数,公开,,,
+.参数名,word_gap,整数
+返回 (obj.方法("SetWordGap",整数,word_gap))
+
+.方法名,ReadIntAddr,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,tpe,整数
+返回 (obj.方法("ReadIntAddr",长整数,hwnd,addr,tpe))
+
+.方法名,SetFindPicMultithreadCount,整数,公开,,,
+.参数名,count,整数
+返回 (obj.方法("SetFindPicMultithreadCount",整数,count))
+
+.方法名,WriteIniPwd,整数,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,v,文本型
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("WriteIniPwd",整数,section,key,v,file_name,pwd))
+
+.方法名,SelectFile,文本型,公开,,,
+返回 (obj.无参数方法("SelectFile",文本型))
+
+.方法名,GetScreenData,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+返回 (obj.方法("GetScreenData",整数,x1,y1,x2,y2))
+
+.方法名,CheckInputMethod,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,id,文本型
+返回 (obj.方法("CheckInputMethod",整数,hwnd,id))
+
+.方法名,FindStrFastExS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrFastExS",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,Md5,文本型,公开,,,
+.参数名,str,文本型
+返回 (obj.方法("Md5",文本型,str))
+
+.方法名,SetMemoryFindResultToFile,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("SetMemoryFindResultToFile",整数,file_name))
+
+.方法名,ReadFloatAddr,小数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+返回 (obj.方法("ReadFloatAddr",小数,hwnd,addr))
+
+.方法名,FoobarUnlock,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("FoobarUnlock",整数,hwnd))
+
+.方法名,GetDictCount,整数,公开,,,
+.参数名,index,整数
+返回 (obj.方法("GetDictCount",整数,index))
+
+.方法名,FindWindowEx,整数,公开,,,
+.参数名,parent,整数
+.参数名,class_name,文本型
+.参数名,title_name,文本型
+返回 (obj.方法("FindWindowEx",整数,parent,class_name,title_name))
+
+.方法名,WriteIntAddr,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,tpe,整数
+.参数名,v,长整数
+返回 (obj.方法("WriteIntAddr",整数,hwnd,addr,tpe,v))
+
+.方法名,Reg,整数,公开,,,
+.参数名,code,文本型
+.参数名,Ver,文本型
+返回 (obj.方法("Reg",整数,code,Ver))
+
+.方法名,CaptureGif,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,file_name,文本型
+.参数名,delay,整数
+.参数名,time,整数
+返回 (obj.方法("CaptureGif",整数,x1,y1,x2,y2,file_name,delay,time))
+
+.方法名,SetSimMode,整数,公开,,,
+.参数名,mode,整数
+返回 (obj.方法("SetSimMode",整数,mode))
+
+.方法名,DownloadFile,整数,公开,,,
+.参数名,url,文本型
+.参数名,save_file,文本型
+.参数名,timeout,整数
+返回 (obj.方法("DownloadFile",整数,url,save_file,timeout))
+
+.方法名,CapturePre,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("CapturePre",整数,file_name))
+
+.方法名,CreateFolder,整数,公开,,,
+.参数名,folder_name,文本型
+返回 (obj.方法("CreateFolder",整数,folder_name))
+
+.方法名,VirtualFreeEx,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+返回 (obj.方法("VirtualFreeEx",整数,hwnd,addr))
+
+.方法名,WriteFloat,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,v,小数
+返回 (obj.方法("WriteFloat",整数,hwnd,addr,v))
+
+.方法名,FindColorBlock,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,count,整数
+.参数名,width,整数
+.参数名,height,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindColorBlock",整数,x1,y1,x2,y2,color,sim,count,width,height,x,y))
+
+.方法名,KeyUp,整数,公开,,,
+.参数名,vk,整数
+返回 (obj.方法("KeyUp",整数,vk))
+
+.方法名,WriteString,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,tpe,整数
+.参数名,v,文本型
+返回 (obj.方法("WriteString",整数,hwnd,addr,tpe,v))
+
+.方法名,Int64ToInt32,整数,公开,,,
+.参数名,v,长整数
+返回 (obj.方法("Int64ToInt32",整数,v))
+
+.方法名,FoobarTextLineGap,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,gap,整数
+返回 (obj.方法("FoobarTextLineGap",整数,hwnd,gap))
+
+.方法名,SelectDirectory,文本型,公开,,,
+返回 (obj.无参数方法("SelectDirectory",文本型))
+
+.方法名,FoobarSetTrans,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,trans,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FoobarSetTrans",整数,hwnd,trans,color,sim))
+
+.方法名,IsSurrpotVt,整数,公开,,,
+返回 (obj.无参数方法("IsSurrpotVt",整数))
+
+.方法名,FoobarSetFont,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,font_name,文本型
+.参数名,size,整数
+.参数名,flag,整数
+返回 (obj.方法("FoobarSetFont",整数,hwnd,font_name,size,flag))
+
+.方法名,OcrInFile,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("OcrInFile",文本型,x1,y1,x2,y2,pic_name,color,sim))
+
+.方法名,DmGuardParams,文本型,公开,,,
+.参数名,cmd,文本型
+.参数名,sub_cmd,文本型
+.参数名,param,文本型
+返回 (obj.方法("DmGuardParams",文本型,cmd,sub_cmd,param))
+
+.方法名,SortPosDistance,文本型,公开,,,
+.参数名,all_pos,文本型
+.参数名,tpe,整数
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("SortPosDistance",文本型,all_pos,tpe,x,y))
+
+.方法名,MatchPicName,文本型,公开,,,
+.参数名,pic_name,文本型
+返回 (obj.方法("MatchPicName",文本型,pic_name))
+
+.方法名,FindFloatEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,float_value_min,小数
+.参数名,float_value_max,小数
+.参数名,steps,整数
+.参数名,multi_thread,整数
+.参数名,mode,整数
+返回 (obj.方法("FindFloatEx",文本型,hwnd,addr_range,float_value_min,float_value_max,steps,multi_thread,mode))
+
+.方法名,VirtualAllocEx,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,size,整数
+.参数名,tpe,整数
+返回 (obj.方法("VirtualAllocEx",长整数,hwnd,addr,size,tpe))
+
+.方法名,MoveWindow,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+返回 (obj.方法("MoveWindow",整数,hwnd,x,y))
+
+.方法名,IsFileExist,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("IsFileExist",整数,file_name))
+
+.方法名,ReadDataToBin,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,length,整数
+返回 (obj.方法("ReadDataToBin",整数,hwnd,addr,length))
+
+.方法名,ReadDataZjj,字节集类,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,size,整数
+.局部变量名,datazjj,字节集类
+.局部变量名,data,整数
+.局部变量名,data_size,整数
+data = ReadDataToBin(hwnd, addr, size)
+
+如果 (data == 0)
+    data_size = 0
+否则
+    data_size = size
+.如果结束
+datazjj = 指针到字节集 (data, data_size)
+返回 (datazjj)
+
+.方法名,EnumIniKeyPwd,文本型,公开,,,
+.参数名,section,文本型
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("EnumIniKeyPwd",文本型,section,file_name,pwd))
+
+.方法名,EnumIniSectionPwd,文本型,公开,,,
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("EnumIniSectionPwd",文本型,file_name,pwd))
+
+.方法名,FindFloat,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,float_value_min,小数
+.参数名,float_value_max,小数
+返回 (obj.方法("FindFloat",文本型,hwnd,addr_range,float_value_min,float_value_max))
+
+.方法名,FindStrFastE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrFastE",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,SetExactOcr,整数,公开,,,
+.参数名,exact_ocr,整数
+返回 (obj.方法("SetExactOcr",整数,exact_ocr))
+
+.方法名,LeftUp,整数,公开,,,
+返回 (obj.无参数方法("LeftUp",整数))
+
+.方法名,GetNetTimeSafe,文本型,公开,,,
+返回 (obj.无参数方法("GetNetTimeSafe",文本型))
+
+.方法名,FaqFetch,文本型,公开,,,
+返回 (obj.无参数方法("FaqFetch",文本型))
+
+.方法名,ExcludePos,文本型,公开,,,
+.参数名,all_pos,文本型
+.参数名,tpe,整数
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+返回 (obj.方法("ExcludePos",文本型,all_pos,tpe,x1,y1,x2,y2))
+
+.方法名,EncodeFile,整数,公开,,,
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("EncodeFile",整数,file_name,pwd))
+
+.方法名,ReadDoubleAddr,小数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+返回 (obj.方法("ReadDoubleAddr",小数,hwnd,addr))
+
+.方法名,GetForegroundFocus,整数,公开,,,
+返回 (obj.无参数方法("GetForegroundFocus",整数))
+
+.方法名,FoobarStartGif,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,pic_name,文本型
+.参数名,repeat_limit,整数
+.参数名,delay,整数
+返回 (obj.方法("FoobarStartGif",整数,hwnd,x,y,pic_name,repeat_limit,delay))
+
+.方法名,SetWordGapNoDict,整数,公开,,,
+.参数名,word_gap,整数
+返回 (obj.方法("SetWordGapNoDict",整数,word_gap))
+
+.方法名,Ver,文本型,公开,,,
+返回 (obj.无参数方法("Ver",文本型))
+
+.方法名,SetWindowSize,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,width,整数
+.参数名,height,整数
+返回 (obj.方法("SetWindowSize",整数,hwnd,width,height))
+
+.方法名,GetScreenWidth,整数,公开,,,
+返回 (obj.无参数方法("GetScreenWidth",整数))
+
+.方法名,GetAveHSV,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+返回 (obj.方法("GetAveHSV",文本型,x1,y1,x2,y2))
+
+.方法名,WriteDataAddrFromBin,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,data,整数
+.参数名,length,整数
+返回 (obj.方法("WriteDataAddrFromBin",整数,hwnd,addr,data,length))
+
+.方法名,WriteDataAddrZjj,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,datazjj,字节集类
+.局部变量名,data,整数
+.局部变量名,size,整数
+data = 取字节集指针 (datazjj)
+size = 取字节集长度 (datazjj)
+返回 (WriteDataAddrFromBin(hwnd, addr, data,size))
+
+.方法名,GetWordsNoDict,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+返回 (obj.方法("GetWordsNoDict",文本型,x1,y1,x2,y2,color))
+
+.方法名,GetLocale,整数,公开,,,
+返回 (obj.无参数方法("GetLocale",整数))
+
+.方法名,IntToData,文本型,公开,,,
+.参数名,int_value,长整数
+.参数名,tpe,整数
+返回 (obj.方法("IntToData",文本型,int_value,tpe))
+
+.方法名,BindWindowEx,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,display,文本型
+.参数名,mouse,文本型
+.参数名,keypad,文本型
+.参数名,public_desc,文本型
+.参数名,mode,整数
+返回 (obj.方法("BindWindowEx",整数,hwnd,display,mouse,keypad,public_desc,mode))
+
+.方法名,EnableDisplayDebug,整数,公开,,,
+.参数名,enable_debug,整数
+返回 (obj.方法("EnableDisplayDebug",整数,enable_debug))
+
+.方法名,KeyPress,整数,公开,,,
+.参数名,vk,整数
+返回 (obj.方法("KeyPress",整数,vk))
+
+.方法名,Beep,整数,公开,,,
+.参数名,fre,整数
+.参数名,delay,整数
+返回 (obj.方法("Beep",整数,fre,delay))
+
+.方法名,FindStrWithFontEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,font_name,文本型
+.参数名,font_size,整数
+.参数名,flag,整数
+返回 (obj.方法("FindStrWithFontEx",文本型,x1,y1,x2,y2,str,color,sim,font_name,font_size,flag))
+
+.方法名,DisablePowerSave,整数,公开,,,
+返回 (obj.无参数方法("DisablePowerSave",整数))
+
+.方法名,FoobarDrawText,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,w,整数
+.参数名,h,整数
+.参数名,text,文本型
+.参数名,color,文本型
+.参数名,align,整数
+返回 (obj.方法("FoobarDrawText",整数,hwnd,x,y,w,h,text,color,align))
+
+.方法名,AsmAdd,整数,公开,,,
+.参数名,asm_ins,文本型
+返回 (obj.方法("AsmAdd",整数,asm_ins))
+
+.方法名,FindStrS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindStrS",文本型,x1,y1,x2,y2,str,color,sim,x,y))
+
+.方法名,ReleaseRef,整数,公开,,,
+返回 (obj.无参数方法("ReleaseRef",整数))
+
+.方法名,SetClipboard,整数,公开,,,
+.参数名,data,文本型
+返回 (obj.方法("SetClipboard",整数,data))
+
+.方法名,GetMachineCodeNoMac,文本型,公开,,,
+返回 (obj.无参数方法("GetMachineCodeNoMac",文本型))
+
+.方法名,ShowScrMsg,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,msg,文本型
+.参数名,color,文本型
+返回 (obj.方法("ShowScrMsg",整数,x1,y1,x2,y2,msg,color))
+
+.方法名,LockInput,整数,公开,,,
+.参数名,locks,整数
+返回 (obj.方法("LockInput",整数,locks))
+
+.方法名,GetScreenDataBmp,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,data,整数类
+.参数名,size,整数类
+返回 (obj.方法("GetScreenDataBmp",整数,x1,y1,x2,y2,data,size))
+
+.方法名,ReadStringAddr,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,tpe,整数
+.参数名,length,整数
+返回 (obj.方法("ReadStringAddr",文本型,hwnd,addr,tpe,length))
+
+.方法名,DeleteFile,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("DeleteFile",整数,file_name))
+
+.方法名,CaptureJpg,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,file_name,文本型
+.参数名,quality,整数
+返回 (obj.方法("CaptureJpg",整数,x1,y1,x2,y2,file_name,quality))
+
+.方法名,SendString2,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,str,文本型
+返回 (obj.方法("SendString2",整数,hwnd,str))
+
+.方法名,GetOsBuildNumber,整数,公开,,,
+返回 (obj.无参数方法("GetOsBuildNumber",整数))
+
+.方法名,GetAveRGB,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+返回 (obj.方法("GetAveRGB",文本型,x1,y1,x2,y2))
+
+.方法名,SetDict,整数,公开,,,
+.参数名,index,整数
+.参数名,dict_name,文本型
+返回 (obj.方法("SetDict",整数,index,dict_name))
+
+.方法名,DeleteIniPwd,整数,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,file_name,文本型
+.参数名,pwd,文本型
+返回 (obj.方法("DeleteIniPwd",整数,section,key,file_name,pwd))
+
+.方法名,GetMousePointWindow,整数,公开,,,
+返回 (obj.无参数方法("GetMousePointWindow",整数))
+
+.方法名,MoveFile,整数,公开,,,
+.参数名,src_file,文本型
+.参数名,dst_file,文本型
+返回 (obj.方法("MoveFile",整数,src_file,dst_file))
+
+.方法名,DeleteIni,整数,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,file_name,文本型
+返回 (obj.方法("DeleteIni",整数,section,key,file_name))
+
+.方法名,EnumWindowByProcessId,文本型,公开,,,
+.参数名,pid,整数
+.参数名,title,文本型
+.参数名,class_name,文本型
+.参数名,filter,整数
+返回 (obj.方法("EnumWindowByProcessId",文本型,pid,title,class_name,filter))
+
+.方法名,GetCpuType,整数,公开,,,
+返回 (obj.无参数方法("GetCpuType",整数))
+
+.方法名,GetScreenDepth,整数,公开,,,
+返回 (obj.无参数方法("GetScreenDepth",整数))
+
+.方法名,FindPicEx,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+返回 (obj.方法("FindPicEx",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir))
+
+.方法名,AsmCall,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,mode,整数
+返回 (obj.方法("AsmCall",长整数,hwnd,mode))
+
+.方法名,GetCursorShapeEx,文本型,公开,,,
+.参数名,tpe,整数
+返回 (obj.方法("GetCursorShapeEx",文本型,tpe))
+
+.方法名,AsmCallEx,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,mode,整数
+.参数名,base_addr,文本型
+返回 (obj.方法("AsmCallEx",长整数,hwnd,mode,base_addr))
+
+.方法名,SetWindowText,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,text,文本型
+返回 (obj.方法("SetWindowText",整数,hwnd,text))
+
+.方法名,FindStrWithFontE,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,font_name,文本型
+.参数名,font_size,整数
+.参数名,flag,整数
+返回 (obj.方法("FindStrWithFontE",文本型,x1,y1,x2,y2,str,color,sim,font_name,font_size,flag))
+
+.方法名,FoobarTextPrintDir,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,dir,整数
+返回 (obj.方法("FoobarTextPrintDir",整数,hwnd,dir))
+
+.方法名,WriteFloatAddr,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,长整数
+.参数名,v,小数
+返回 (obj.方法("WriteFloatAddr",整数,hwnd,addr,v))
+
+.方法名,DisableFontSmooth,整数,公开,,,
+返回 (obj.无参数方法("DisableFontSmooth",整数))
+
+.方法名,FoobarStopGif,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,pic_name,文本型
+返回 (obj.方法("FoobarStopGif",整数,hwnd,x,y,pic_name))
+
+.方法名,GetFileLength,整数,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("GetFileLength",整数,file_name))
+
+.方法名,SpeedNormalGraphic,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("SpeedNormalGraphic",整数,en))
+
+.方法名,SetAero,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("SetAero",整数,en))
+
+.方法名,ReadIni,文本型,公开,,,
+.参数名,section,文本型
+.参数名,key,文本型
+.参数名,file_name,文本型
+返回 (obj.方法("ReadIni",文本型,section,key,file_name))
+
+.方法名,FindPicS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,pic_name,文本型
+.参数名,delta_color,文本型
+.参数名,sim,小数
+.参数名,dir,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindPicS",文本型,x1,y1,x2,y2,pic_name,delta_color,sim,dir,x,y))
+
+.方法名,GetMachineCode,文本型,公开,,,
+返回 (obj.无参数方法("GetMachineCode",文本型))
+
+.方法名,GetDPI,整数,公开,,,
+返回 (obj.无参数方法("GetDPI",整数))
+
+.方法名,SetExportDict,整数,公开,,,
+.参数名,index,整数
+.参数名,dict_name,文本型
+返回 (obj.方法("SetExportDict",整数,index,dict_name))
+
+.方法名,SetMouseDelay,整数,公开,,,
+.参数名,tpe,文本型
+.参数名,delay,整数
+返回 (obj.方法("SetMouseDelay",整数,tpe,delay))
+
+.方法名,DmGuardExtract,整数,公开,,,
+.参数名,tpe,文本型
+.参数名,path,文本型
+返回 (obj.方法("DmGuardExtract",整数,tpe,path))
+
+.方法名,SetShowErrorMsg,整数,公开,,,
+.参数名,show,整数
+返回 (obj.方法("SetShowErrorMsg",整数,show))
+
+.方法名,ShowTaskBarIcon,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,is_show,整数
+返回 (obj.方法("ShowTaskBarIcon",整数,hwnd,is_show))
+
+.方法名,SetDictPwd,整数,公开,,,
+.参数名,pwd,文本型
+返回 (obj.方法("SetDictPwd",整数,pwd))
+
+.方法名,ReadFile,文本型,公开,,,
+.参数名,file_name,文本型
+返回 (obj.方法("ReadFile",文本型,file_name))
+
+.方法名,GetWindowThreadId,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("GetWindowThreadId",整数,hwnd))
+
+.方法名,FindInputMethod,整数,公开,,,
+.参数名,id,文本型
+返回 (obj.方法("FindInputMethod",整数,id))
+
+.方法名,CheckFontSmooth,整数,公开,,,
+返回 (obj.无参数方法("CheckFontSmooth",整数))
+
+.方法名,CreateFoobarCustom,整数,公开,,,
+.参数名,hwnd,整数
+.参数名,x,整数
+.参数名,y,整数
+.参数名,pic,文本型
+.参数名,trans_color,文本型
+.参数名,sim,小数
+返回 (obj.方法("CreateFoobarCustom",整数,hwnd,x,y,pic,trans_color,sim))
+
+.方法名,GetNetTimeByIp,文本型,公开,,,
+.参数名,ip,文本型
+返回 (obj.方法("GetNetTimeByIp",文本型,ip))
+
+.方法名,SaveDict,整数,公开,,,
+.参数名,index,整数
+.参数名,file_name,文本型
+返回 (obj.方法("SaveDict",整数,index,file_name))
+
+.方法名,FindIntEx,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr_range,文本型
+.参数名,int_value_min,长整数
+.参数名,int_value_max,长整数
+.参数名,tpe,整数
+.参数名,steps,整数
+.参数名,multi_thread,整数
+.参数名,mode,整数
+返回 (obj.方法("FindIntEx",文本型,hwnd,addr_range,int_value_min,int_value_max,tpe,steps,multi_thread,mode))
+
+.方法名,SetMemoryHwndAsProcessId,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("SetMemoryHwndAsProcessId",整数,en))
+
+.方法名,GetWords,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("GetWords",文本型,x1,y1,x2,y2,color,sim))
+
+.方法名,FaqRelease,整数,公开,,,
+.参数名,handle,整数
+返回 (obj.方法("FaqRelease",整数,handle))
+
+.方法名,FindStrWithFont,整数,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+.参数名,font_name,文本型
+.参数名,font_size,整数
+.参数名,flag,整数
+.参数名,x,整数类
+.参数名,y,整数类
+返回 (obj.方法("FindStrWithFont",整数,x1,y1,x2,y2,str,color,sim,font_name,font_size,flag,x,y))
+
+.方法名,EnterCri,整数,公开,,,
+返回 (obj.无参数方法("EnterCri",整数))
+
+.方法名,GetMemoryUsage,整数,公开,,,
+返回 (obj.无参数方法("GetMemoryUsage",整数))
+
+.方法名,GetWordResultCount,整数,公开,,,
+.参数名,str,文本型
+返回 (obj.方法("GetWordResultCount",整数,str))
+
+.方法名,GetMouseSpeed,整数,公开,,,
+返回 (obj.无参数方法("GetMouseSpeed",整数))
+
+.方法名,KeyPressStr,整数,公开,,,
+.参数名,key_str,文本型
+.参数名,delay,整数
+返回 (obj.方法("KeyPressStr",整数,key_str,delay))
+
+.方法名,Hex32,文本型,公开,,,
+.参数名,v,整数
+返回 (obj.方法("Hex32",文本型,v))
+
+.方法名,EnableBind,整数,公开,,,
+.参数名,en,整数
+返回 (obj.方法("EnableBind",整数,en))
+
+.方法名,DisableCloseDisplayAndSleep,整数,公开,,,
+返回 (obj.无参数方法("DisableCloseDisplayAndSleep",整数))
+
+.方法名,ReadString,文本型,公开,,,
+.参数名,hwnd,整数
+.参数名,addr,文本型
+.参数名,tpe,整数
+.参数名,length,整数
+返回 (obj.方法("ReadString",文本型,hwnd,addr,tpe,length))
+
+.方法名,ForceUnBindWindow,整数,公开,,,
+.参数名,hwnd,整数
+返回 (obj.方法("ForceUnBindWindow",整数,hwnd))
+
+.方法名,RunApp,整数,公开,,,
+.参数名,path,文本型
+.参数名,mode,整数
+返回 (obj.方法("RunApp",整数,path,mode))
+
+.方法名,OcrExOne,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("OcrExOne",文本型,x1,y1,x2,y2,color,sim))
+
+.方法名,AsmSetTimeout,整数,公开,,,
+.参数名,time_out,整数
+.参数名,param,整数
+返回 (obj.方法("AsmSetTimeout",整数,time_out,param))
+
+.方法名,GetRemoteApiAddress,长整数,公开,,,
+.参数名,hwnd,整数
+.参数名,base_addr,长整数
+.参数名,fun_name,文本型
+返回 (obj.方法("GetRemoteApiAddress",长整数,hwnd,base_addr,fun_name))
+
+.方法名,FindStrExS,文本型,公开,,,
+.参数名,x1,整数
+.参数名,y1,整数
+.参数名,x2,整数
+.参数名,y2,整数
+.参数名,str,文本型
+.参数名,color,文本型
+.参数名,sim,小数
+返回 (obj.方法("FindStrExS",文本型,x1,y1,x2,y2,str,color,sim))
+
+.方法名,ExitOs,整数,公开,,,
+.参数名,tpe,整数
+返回 (obj.方法("ExitOs",整数,tpe))
+

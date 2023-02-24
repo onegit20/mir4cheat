@@ -1,0 +1,9 @@
+生成的obj.vb即是使用在VB.Net平台下的类库封装. 需要注意的是,由于函数(Stop)和VB.Net冲突,我在类里封装的函数名改为了(StopAudio)
+由于我对VB.Net不够了解,导致函数ClientToScreen和ScreenToClient无法正常调用,所以在类库中删除了这2个函数.
+以下是一个例子,在VB.Net新建一个exe工程,然后项目->添加现有项->选择obj.vb即可.
+然后把你的DLL regsvr32到系统中
+然后,创建一个按钮,在按钮事件里写入以下代码
+Dim dm As MyDmsoft
+dm = new MyDmsoft() ' 创建对象
+MsgBox dm.Ver()
+dm = nothing ' 释放对象
